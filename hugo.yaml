@@ -35,24 +35,60 @@ Menus:
       title: Home
       url: /
       weight: 1
-    - identifier: projects
-      name: Projects
-      title: Projects
-      url: /#projects
-      weight: 2
+
     - identifier: experience
       name: Experience
       title: Experience
       url: /#experience
+      weight: 2
+
+    - identifier: tracks
+      name: Tracks
       weight: 3
-    - identifier: coursework
-      name: Coursework
-      title: Coursework
-      url: /#education
+    
+    - identifier: track-ml
+      name: Applied ML & Decision Systems
+      url: /tracks/applied-ml/
+      parent: tracks
+      weight: 1
+
+    - identifier: track-nlp
+      name: NLP, LLMs & Multimodal
+      url: /tracks/nlp-llms/
+      parent: tracks
+      weight: 2
+
+    - identifier: track-data
+      name: Data Engineering & Analytics
+      url: /tracks/data-engineering/
+      parent: tracks
+      weight: 3
+
+    - identifier: track-finance
+      name: Finance & Risk Analytics
+      url: /tracks/finance/
+      parent: tracks
       weight: 4
+
+    - identifier: track-cj
+      name: Criminal Justice Systems
+      url: /tracks/criminal-justice/
+      parent: tracks
+      weight: 5
+
+    - identifier: track-climate
+      name: Climate & Energy Analytics
+      url: /tracks/climate-energy/
+      parent: tracks
+      weight: 6
+
+    - identifier: projects
+      name: Projects
+      url: /#projects
+      weight: 4
+
     - identifier: contact
       name: Contact
-      title: Contact
       url: /#contact
       weight: 5
 
@@ -132,8 +168,10 @@ params:
     # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
     # showBrandLogo: false # Show brand logo in nav bar | default is true
     brandName: "Sri Bhamidipati"
+    showBrandLogo: false
     disableSearch: false
-    # searchPlaceholder: "Search"
+    searchPlaceholder: "Search"
+    align: me-auto
     stickyNavBar:
       enable: true
       showOnScrollUp: true
@@ -155,7 +193,8 @@ params:
     content: >-
       Applied Data Scientist focused on classic ML + applied NLP (RAG, multimodal, evaluation) and mission-driven analytics, shipped across finance, criminal justice, healthcare, and climate/energy.
       <br/><br/>
-      MS Public Policy & Management, Data Science · Carnegie Mellon University
+      MS Public Policy Management &Data Science · Carnegie Mellon University
+      <br/>
       BS Data Science & Economics · Purdue University
     image: "/images/hero.svg"
     bottomImage:
@@ -176,10 +215,24 @@ params:
           url: "/resume.pdf"
         - icon: fa fa-envelope
           url: "mailto:srib@andrew.cmu.edu"
-      customIcons:
-        - icon: /fav.png
+        - icon: fab fa-github
           url: "https://github.com/srispb3710"
 
+  homeButtons:
+    enable: true
+
+  about:
+    enable: true
+    title: ""
+    image: ""
+    content: |-
+      <div style="display:flex;gap:20px;margin-bottom:30px;font-weight:500;">
+        <a href="#about" style="text-decoration:none;">Featured Artifacts</a>
+        <a href="#experience" style="text-decoration:none;">Industry Experience</a>
+        <a href="#skills" style="text-decoration:none;">Skills</a>
+        <a href="#education" style="text-decoration:none;">Coursework</a>
+      </div>
+  
   # Featured Aritfacts Row (About)
   about:
     enable: true
