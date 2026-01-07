@@ -35,14 +35,14 @@ Menus:
       url: /
       weight: 1
 
-    - identifier: projects
-      name: Projects
-      url: /projects/
-      weight: 2
-
     - identifier: experience
       name: Experience
       url: /experience/
+      weight: 2
+
+    - identifier: projects
+      name: Projects
+      url: /projects/
       weight: 3
 
     - identifier: skills
@@ -50,74 +50,11 @@ Menus:
       url: /skills/
       weight: 4
 
-    - identifier: contact
-      name: Contact
-      url: /contact/
+    - identifier: about
+      name: About
+      url: /about/
       weight: 5
 
-# Menus:
-#   main:
-#     - identifier: home
-#       name: Home
-#       title: Home
-#       url: /
-#       weight: 1
-
-#     - identifier: experience
-#       name: Experience
-#       title: Experience
-#       url: /#experience
-#       weight: 2
-
-#     - identifier: tracks
-#       name: Tracks
-#       weight: 3
-    
-#     - identifier: track-ml
-#       name: Applied ML & Decision Systems
-#       url: /tracks/applied-ml/
-#       parent: tracks
-#       weight: 1
-
-#     - identifier: track-nlp
-#       name: NLP, LLMs & Multimodal
-#       url: /tracks/nlp-llms/
-#       parent: tracks
-#       weight: 2
-
-#     - identifier: track-data
-#       name: Data Engineering & Analytics
-#       url: /tracks/data-engineering/
-#       parent: tracks
-#       weight: 3
-
-#     - identifier: track-finance
-#       name: Finance & Risk Analytics
-#       url: /tracks/finance/
-#       parent: tracks
-#       weight: 4
-
-#     - identifier: track-cj
-#       name: Criminal Justice Systems
-#       url: /tracks/criminal-justice/
-#       parent: tracks
-#       weight: 5
-
-#     - identifier: track-climate
-#       name: Climate & Energy Analytics
-#       url: /tracks/climate-energy/
-#       parent: tracks
-#       weight: 6
-
-#     - identifier: projects
-#       name: Projects
-#       url: /#projects
-#       weight: 4
-
-#     - identifier: contact
-#       name: Contact
-#       url: /#contact
-#       weight: 5
 
 params:
   title: "Sri Bhamidipati"
@@ -186,22 +123,22 @@ params:
       enable: true
       showOnScrollUp: true
     enableSeparator: false
-    menus:
-      disableAbout: true
-      disableExperience: true
-      disableEducation: true
-      disableProjects: true
-      disableAchievements: true
-      disableContact: true
+    # menus:
+    #   disableAbout: true
+    #   disableExperience: true
+    #   disableEducation: true
+    #   disableProjects: true
+    #   disableAchievements: true
+    #   disableContact: true
 
   # Hero
   hero:
     enable: true
     intro: ""
     title: "Sri Pranavi Bhamidipati"
-    subtitle: "Applied Data Scientist"
+    subtitle: "AI + Analytics | Products & Pipelines | Public Impact"
     content: >-
-      Applied Data Scientist focused on classic ML + applied NLP (RAG, multimodal, evaluation) and mission-driven analytics, shipped across finance, criminal justice, healthcare, and climate/energy.
+      Applied Data Scientist focused on classic ML + applied NLP (RAG, multimodal, evaluation) and mission-driven analytics, shipped across finance, healthcare, climate/energy, and criminal justice.
     #  <br/><br/>
     # MS Public Policy Management & Data Science · Carnegie Mellon University
     # <br/>
@@ -377,7 +314,7 @@ params:
 
   # Contact
   contact:
-    enable: true
+    enable: false
     title: "Contact"
     content: "Any questions, feedback, or want to connect, please feel free to reach me here!"
     btnName: "Email"
