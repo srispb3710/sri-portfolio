@@ -1,0 +1,111 @@
+{{ if .Site.Params.projects.enable | default false }}
+<section id="projects" class="py-5">
+    <div class="container">
+        <h3 class="text-center">{{ .Site.Params.projects.title | default "Projects" }}</h3>
+        <div class="row justify-content-center px-3 px-md-5">
+            {{ range .Site.Params.projects.items }}
+            <div class="card my-3 h-100 project-card" title="{{ .title }}">
+                <div class="card-body bg-transparent p-3 d-flex flex-column">
+                     <!-- TITLE -->
+                    <h5 class="card-title bg-transparent project-title mb-2">{{ .title }}</h5>
+
+                    <!-- DESCRIPTION -->
+                    <div class="card-text bg-transparent secondary-font project-desc mb-3">
+                        {{ .content }}
+                    </div>
+
+                    <!-- IMAGE (below description) -->
+                    {{ if .image }}
+                    <div class="project-image mb-3">
+                        <img class="project-img" src="{{ .image | relURL }}" alt="{{ .title }}">
+                    </div>
+                    {{ else }}
+                    <div class="project-image project-image--placeholder mb-3"></div>
+                    {{ end }}
+
+                    <!-- TAGS (bottom-right, above divider/icons) -->
+                    {{ if .badges }}
+                    <div class="project-badges mt-auto mb-2">
+                        {{ range .badges }}
+                        <span class="badge badge-secondary project-badge">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+                {{ if or (.links) (.featured) }}
+                <div class="card-footer py-3 project-footer">
+                    {{ range .links }}
+                    <span class="m-1 mx-2">
+                        <a href="{{ .url }}" target="_blank">
+                            <i class="{{ .icon }}"></i>
+                        </a>
+                    </span>
+                    {{ end }}
+                    {{ if .featured }}
+                    <span class="float-end">
+                        <a class="btn btn-sm" href="{{ .featured.link }}" target="_blank">
+                            {{ .featured.name }}
+                        </a>
+                    </span>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
+            {{ end }}
+            {{ range ( where .Site.RegularPages "Type" "projects" ) }}
+            {{ if .Params.showInHome | default true }}
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100 project-card" title="{{ .Title }}">
+                    <div class="card-body bg-transparent p-3 d-flex flex-column">
+
+                        <!-- TITLE -->
+                        <h5 class="card-title bg-transparent project-title mb-2">{{ .Title | truncate 50 }}</h5>
+
+                        <!-- DESCRIPTION -->
+                        <div class="card-text bg-transparent secondary-font project-desc mb-3">
+                            {{ .Summary | truncate 140 | safeHTML }}
+                        </div>
+
+                        <!-- IMAGE (below description) -->
+                        {{ if .Params.image }}
+                        <div class="project-image mb-3">
+                            <img class="project-img" src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
+                        </div>
+                        {{ else }}
+                        <div class="project-image project-image--placeholder mb-3"></div>
+                        {{ end }}
+
+                        <!-- TAGS (bottom-right, above divider/icons) -->
+                        {{ if .Params.badges }}
+                        <div class="project-badges mt-auto mb-2">
+                            {{ range .Params.badges }}
+                            <span class="badge badge-secondary project-badge">{{ . }}</span>
+                            {{ end }}
+                        </div>
+                        {{ end }}
+
+                    </div>
+
+                    <div class="card-footer py-3 project-footer">
+                        {{ range .Params.links }}
+                        <span class="m-1 mx-2">
+                            <a href="{{ .url }}">
+                                <i class="{{ .icon }}"></i>
+                            </a>
+                        </span>
+                        {{ end }}
+
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="{{ .RelPermalink }}">
+                                Know more
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

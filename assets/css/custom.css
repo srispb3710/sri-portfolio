@@ -67,3 +67,57 @@ section#education .card:hover {
   transform: translateY(-2px);
   transition: transform 0.12s ease;
 }
+
+/* ===== Project card: Title > Desc > Image > Tags (bottom-right) > Icons ===== */
+
+.project-card .project-title{
+  font-weight: 800;
+  letter-spacing: -0.2px;
+}
+
+.project-card .project-desc{
+  line-height: 1.5;
+  opacity: 0.92;
+}
+
+/* Image block (below description) */
+.project-card .project-image{
+  width: 100%;
+}
+
+.project-card .project-img{
+  width: 100%;
+  height: 170px;         /* adjust */
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+}
+
+/* Placeholder when you haven't added images yet */
+.project-card .project-image--placeholder{
+  height: 170px;         /* match project-img height */
+  border-radius: 14px;
+  background: rgba(0,0,0,0.04);
+}
+
+/* Tags aligned bottom-right above footer */
+.project-card .project-badges{
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.project-card .project-badge{
+  background: rgba(0,0,0,0.06) !important;
+  border: 1px solid rgba(0,0,0,0.08);
+  color: inherit;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+
+/* Divider line above icons row */
+.project-card .project-footer{
+  border-top: 1px solid rgba(0,0,0,0.10);
+}
