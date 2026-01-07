@@ -218,51 +218,47 @@ params:
           url: "https://github.com/srispb3710"
 
   about:
-  enable: true
-  title: "Featured Artifacts"
-  image: ""
-  content: |-
-    <!-- Jump row -->
-    <div style="display:flex;gap:20px;margin-bottom:30px;font-weight:500;">
-      <a href="#about" style="text-decoration:none;">Featured Artifacts</a>
-      <a href="#experience" style="text-decoration:none;">Industry Experience</a>
-      <a href="#skills" style="text-decoration:none;">Skills</a>
-      <a href="#education" style="text-decoration:none;">Coursework</a>
-    </div>
-
-    <!-- Artifact chips -->
-    <div style="display:flex;flex-wrap:wrap;gap:10px;">
-      <a href="/resume.pdf" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">Resume (PDF)</a>
-      <a href="YOUR_PROJECT_DECK_LINK" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">Best Project Deck</a>
-      <a href="YOUR_TECH_REPORT_LINK" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">Best Technical Report</a>
-      <a href="YOUR_POSTER_LINK" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">Best Poster</a>
-      <a href="https://github.com/srispb3710" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">GitHub (Private)</a>
-      <a href="https://www.linkedin.com/in/spbhamidipati/" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">LinkedIn</a>
-    </div>
-  
-    <!-- Technical Skills -->
-    <div id="skills" class="skills-grid">
-      <div class="skills-col">
-        <h4>Modeling & Analytics</h4>
-        <p><strong>Classic ML</strong><br/>Regression, tree-based models, evaluation</p>
-        <p><strong>NLP</strong><br/>Text classification, RAG, embeddings</p>
-        <p><strong>Multimodal ML</strong><br/>VQA, vision-language evaluation</p>
+    enable: true
+    title: "Featured Artifacts"
+    image: ""
+    content: |-
+      <!-- Jump row -->
+      <div style="display:flex;gap:20px;margin-bottom:30px;font-weight:500;">
+        <a href="#about" style="text-decoration:none;">Featured Artifacts</a>
+        <a href="#experience" style="text-decoration:none;">Industry Experience</a>
+        <a href="#skills" style="text-decoration:none;">Skills</a>
+        <a href="#education" style="text-decoration:none;">Coursework</a>
       </div>
-
-      <div class="skills-col">
-        <h4>Data & Systems</h4>
-        <p><strong>Data Engineering</strong><br/>Cleaning, feature pipelines</p>
-        <p><strong>Forecasting</strong><br/>Time series modeling</p>
-        <p><strong>Optimization</strong><br/>Decision & risk modeling</p>
+      <!-- Artifact chips -->
+      <div style="display:flex;flex-wrap:wrap;gap:10px;">
+        <a href="/resume.pdf" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">Resume (PDF)</a>
+        <a href="YOUR_PROJECT_DECK_LINK" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">Best Project Deck</a>
+        <a href="YOUR_TECH_REPORT_LINK" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">Best Technical Report</a>
+        <a href="YOUR_POSTER_LINK" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">Best Poster</a>
+        <a href="https://github.com/srispb3710" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">GitHub (Private)</a>
+        <a href="https://www.linkedin.com/in/spbhamidipati/" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">LinkedIn</a>
       </div>
-
-      <div class="skills-col">
-        <h4>Tools</h4>
-        <p><strong>Languages</strong><br/>Python · SQL · R</p>
-        <p><strong>ML</strong><br/>PyTorch · scikit-learn · HuggingFace</p>
-        <p><strong>Infra</strong><br/>AzureML · AWS · Git</p>
+      <!-- Technical Skills -->
+      <div id="skills" class="skills-grid">
+        <div class="skills-col">
+          <h4>Modeling & Analytics</h4>
+          <p><strong>Classic ML</strong><br/>Regression, tree-based models, evaluation</p>
+          <p><strong>NLP</strong><br/>Text classification, RAG, embeddings</p>
+          <p><strong>Multimodal ML</strong><br/>VQA, vision-language evaluation</p>
+        </div>
+        <div class="skills-col">
+          <h4>Data & Systems</h4>
+          <p><strong>Data Engineering</strong><br/>Cleaning, feature pipelines</p>
+          <p><strong>Forecasting</strong><br/>Time series modeling</p>
+          <p><strong>Optimization</strong><br/>Decision & risk modeling</p>
+        </div>
+        <div class="skills-col">
+          <h4>Tools</h4>
+          <p><strong>Languages</strong><br/>Python · SQL · R</p>
+          <p><strong>ML</strong><br/>PyTorch · scikit-learn · HuggingFace</p>
+          <p><strong>Infra</strong><br/>AzureML · AWS · Git</p>
+        </div>
       </div>
-    </div>
 
   # Industry Experience
   experience:
