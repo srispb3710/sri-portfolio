@@ -8,10 +8,6 @@ nav.navbar .navbar-collapse {
   width: 100%;
 }
 
-/* Keep the brand pinned left */
-nav.navbar .navbar-brand {
-  margin-right: auto !important;
-}
 
 /* Make sure the right-side items stay in one row and can be reordered */
 /* nav.navbar .navbar-collapse > * {
@@ -40,11 +36,13 @@ nav.navbar .darkmode {
   margin-left: 14px !important;
 }
 
-/* 3) Search LAST (after toggle) */
+/* Search goes far LEFT */
 nav.navbar form {
-  order: 3;
-  margin-left: 14px !important;
+  order: 0;
+  margin-right: auto !important;
+  margin-left: 0 !important;
 }
+
 
 /* Optional: keep search input from being comically wide */
 nav.navbar form input[type="search"],
@@ -53,6 +51,17 @@ nav.navbar form input {
   max-width: 30vw;
 }
 
+nav.navbar {
+  display: flex;
+  align-items: center;
+}
+
+nav.navbar .navbar-brand,
+nav.navbar .navbar-brand a {
+  display: flex;
+  align-items: center;
+  line-height: normal;
+}
 
 /* ===== EDUCATION: make cards pop ===== */
 #education .card,

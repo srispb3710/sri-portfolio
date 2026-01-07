@@ -14,7 +14,13 @@ nav.navbar .navbar-brand {
 }
 
 /* Make sure the right-side items stay in one row and can be reordered */
-nav.navbar .navbar-collapse > * {
+/* nav.navbar .navbar-collapse > * {
+  display: flex;
+  align-items: center;
+} */
+
+/* Only make the nav list a flex row (don’t flex every child) */
+nav.navbar .navbar-nav {
   display: flex;
   align-items: center;
 }

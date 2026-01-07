@@ -322,7 +322,7 @@ params:
 
       - title: "Capstone VSG System"
         content: "NLP override reasons + regression + scaling for CJ workflows."
-        image: /images/projects/capstone.jpg
+        # image: /images/projects/capstone.jpg
         badges: ["NLP", "Regression", "CJ", "Decision Support"]
         links:
           - icon: fas fa-link
