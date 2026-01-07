@@ -1,6 +1,6 @@
 baseURL: "https://hugo-profile.netlify.app"
 languageCode: "en-us"
-title: "Sripranavi (Sri) Bhamidipati"
+title: "Sri Bhamidipati"
 theme: hugo-profile
 
 outputs:
@@ -35,14 +35,14 @@ Menus:
       url: /
       weight: 1
 
-    - identifier: experience
-      name: Experience
-      url: /experience/
-      weight: 2
-
     - identifier: projects
       name: Projects
       url: /projects/
+      weight: 2
+
+    - identifier: experience
+      name: Experience
+      url: /experience/
       weight: 3
 
     - identifier: skills
@@ -228,56 +228,7 @@ params:
         - icon: fab fa-github
           url: "https://github.com/srispb3710"
 
-  
-  education:
-    enable: true
-    title: "Education"
-    index: false
-    items:
-      - title: "Carnegie Mellon University"
-        school:
-          name: "M.S. Public Policy Management & Data Science"
-          url: "https://www.cmu.edu/"
-        date: "2024 – 2026"
-        content: |-
-          - Heinz College
-          - Focus: Applied ML, NLP, decision systems, policy
-
-      - title: "Purdue University"
-        school:
-          name: "B.S. Data Science & Economics"
-          url: "https://www.purdue.edu/"
-        date: "2018 – 2022"
-        content: |-
-          - Concentrations: algorithms, big data, data engineering
-          - Coursework: ML, stats, systems
-
-  # about:
-  #   enable: true
-  #   title: ""
-  #   image: ""
   #   content: |-
-  #     <style>
-  #       /* Skills 3-col */
-  #       .skills-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:40px; margin-top:18px; }
-  #       .skills-col h4 { margin-bottom:12px; }
-  #       .skills-col p { margin: 0 0 14px 0; opacity: 0.9; line-height: 1.5; }
-  #       @media (max-width: 900px){ .skills-grid{grid-template-columns:1fr;} }
-
-  #       /* Artifact cards */
-  #       .artifact-grid { display:grid; grid-template-columns: repeat(3, 1fr); gap:18px; margin-top:16px; }
-  #       @media (max-width: 1100px){ .artifact-grid{grid-template-columns: repeat(2,1fr);} }
-  #       @media (max-width: 700px){ .artifact-grid{grid-template-columns: 1fr;} }
-
-  #       .artifact-card {
-  #         display:block; padding:18px; border:1px solid rgba(0,0,0,0.12);
-  #         border-radius:16px; text-decoration:none; background:#fff;
-  #         transition: transform .12s ease, box-shadow .12s ease;
-  #       }
-  #       .artifact-card:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.08); }
-  #       .artifact-title { font-weight:700; margin-bottom:6px; }
-  #       .artifact-sub { opacity:0.8; font-size: 0.95rem; margin:0; }
-
   #       /* Jump row above heading */
   #       .jump-row { display:flex; gap:22px; flex-wrap:wrap; margin-bottom:18px; font-weight:600; }
   #       .jump-row a { text-decoration:none; }
@@ -289,66 +240,6 @@ params:
   #       <a href="#industry-experience">Industry Experience</a>
   #       <a href="#skills-section">Skills</a>
   #       <a href="#coursework">Coursework</a>
-  #     </div>
-
-  #     <h2 id="featured-artifacts">Featured Artifacts</h2>
-
-  #     <!-- Artifact buttons styled like cards -->
-  #     <div class="artifact-grid">
-  #       <a class="artifact-card" href="/resume.pdf" target="_blank">
-  #         <div class="artifact-title">Resume (PDF)</div>
-  #         <p class="artifact-sub">One-page overview</p>
-  #       </a>
-
-  #       <a class="artifact-card" href="YOUR_PROJECT_DECK_LINK" target="_blank">
-  #         <div class="artifact-title">Best Project Deck</div>
-  #         <p class="artifact-sub">Capstone or ML Policy Lab</p>
-  #       </a>
-
-  #       <a class="artifact-card" href="YOUR_TECH_REPORT_LINK" target="_blank">
-  #         <div class="artifact-title">Best Technical Report</div>
-  #         <p class="artifact-sub">ANLP VQA or Capstone report</p>
-  #       </a>
-
-  #       <a class="artifact-card" href="YOUR_POSTER_LINK" target="_blank">
-  #         <div class="artifact-title">Best Poster</div>
-  #         <p class="artifact-sub">ANLP poster</p>
-  #       </a>
-
-  #       <a class="artifact-card" href="https://github.com/srispb3710" target="_blank">
-  #         <div class="artifact-title">GitHub</div>
-  #         <p class="artifact-sub">Code + notebooks (private/public)</p>
-  #       </a>
-
-  #       <a class="artifact-card" href="https://www.linkedin.com/in/spbhamidipati/" target="_blank">
-  #         <div class="artifact-title">LinkedIn</div>
-  #         <p class="artifact-sub">Experience + highlights</p>
-  #       </a>
-  #     </div>
-
-  #     <h2 id="skills-section" style="margin-top:44px;">Skills</h2>
-
-  #     <div class="skills-grid">
-  #       <div class="skills-col">
-  #         <h4>Modeling & Analytics</h4>
-  #         <p><strong>Classic ML</strong><br/>Regression, tree-based models, evaluation</p>
-  #         <p><strong>NLP</strong><br/>Text classification, RAG, embeddings</p>
-  #         <p><strong>Multimodal ML</strong><br/>VQA, vision-language evaluation</p>
-  #       </div>
-
-  #       <div class="skills-col">
-  #         <h4>Data & Systems</h4>
-  #         <p><strong>Data Engineering</strong><br/>Cleaning, feature pipelines</p>
-  #         <p><strong>Forecasting</strong><br/>Time series modeling</p>
-  #         <p><strong>Optimization</strong><br/>Decision & risk modeling</p>
-  #       </div>
-
-  #       <div class="skills-col">
-  #         <h4>Tools</h4>
-  #         <p><strong>Languages</strong><br/>Python · SQL · R</p>
-  #         <p><strong>ML</strong><br/>PyTorch · scikit-learn · HuggingFace</p>
-  #         <p><strong>Infra</strong><br/>AzureML · AWS · Git</p>
-  #       </div>
   #     </div>
 
   # Industry Experience
@@ -459,63 +350,30 @@ params:
           - icon: fab fa-linkedin
             url: "https://www.linkedin.com/in/spbhamidipati/"                
 
-  # # Coursework (implemented using Education section)
-  # education:
-  #   enable: true
-  #   title: "<span id='coursework'>Coursework</span>"
-  #   index: false
-  #   items:
-  #     - title: "Applied ML, Statistics, & Decision Modeling"
-  #       school:
-  #         name: ""
-  #         url: ""
-  #       date: ""
-  #       content: |-
-  #         - Optimization
-  #         - Decision & Risk Modeling
-  #         - Applied Econometrics
-  #         - Time Series Forecasting
-  #         - Exploratory Data Analysis
-  #     - title: "NLP, LLMs, & Generative AI"
-  #       school:
-  #         name: ""
-  #         url: ""
-  #       date: ""
-  #       content: |-
-  #         - Advanced Natural Language Processing
-  #         - Computational Data Science
-  #         - Unstructured Data Analytics for Policy
-  #         - Generative AI Lab
-  #     - title: "Systems, Data, & Production"
-  #       school:
-  #         name: ""
-  #         url: ""
-  #       date: ""
-  #       content: |-
-  #         - Database Management
-  #         - ML in Production
-  #         - Systems Synthesis
-  #     - title: "Policy, Governance, & Communication"
-  #       school:
-  #         name: ""
-  #         url: ""
-  #       date: ""
-  #       content: |-
-  #         - AI Governance
-  #         - Writing for Public Policy
-  #         - Critical Analysis for Policy Research
-  #         - Strategic Presentation Skills
-  #         - Organizational Design & Implementation
-  #     - title: "Urban / Global Context"
-  #       school:
-  #         name: ""
-  #         url: ""
-  #       date: ""
-  #       content: |-
-  #         - Smart Cities
-  #         - International Politics
-  #         - From Data to Action
-  #         - Accounting & Financial Analytics
+  
+  
+  education:
+    enable: true
+    title: "Education"
+    index: false
+    items:
+      - title: "Carnegie Mellon University"
+        school:
+          name: "M.S. Public Policy Management & Data Science"
+          url: "https://www.cmu.edu/"
+        date: "2024 – 2026"
+        content: |-
+          - Heinz College
+          - Focus: Applied ML, NLP, decision systems, policy
+
+      - title: "Purdue University"
+        school:
+          name: "B.S. Data Science & Economics"
+          url: "https://www.purdue.edu/"
+        date: "2018 – 2022"
+        content: |-
+          - Concentrations: algorithms, big data, data engineering
+          - Coursework: ML, stats, systems
 
   # Contact
   contact:
