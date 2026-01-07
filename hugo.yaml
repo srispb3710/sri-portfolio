@@ -371,78 +371,70 @@ params:
 
   # Featured Projects (6 cards max)
   projects:
-    enable: true
-    title: "Featured Projects — <a href='/projects/' style='font-size:0.9rem;'>View all →</a>"
-    items:
-      - title: "ML Policy Lab"
-        content: "Bias audit + model selection + temporal evaluation for policy triage."
-        image: /images/projects/ml-policy-lab.jpg
-        badges:
-          - "Evaluation"
-          - "Bias Audit"
-          - "Temporal Splits"
-          - "Python"
-        links:
-          - icon: fab fa-github
-            url: "https://github.com/srispb3710"
+  enable: true
+  title: "Featured Projects — <a href='/projects/' style='font-size:0.9rem;'>View all →</a>"
+  items:
 
-      - title: "ANLP RAG System"
-        content: "Scraping + retrieval/reranking + EM/F1 evaluation for QA."
-        image: /images/projects/rag.jpg
-        badges:
-          - "RAG"
-          - "Retrieval"
-          - "Reranking"
-          - "EM/F1"
-        links:
-          - icon: fab fa-github
-            url: "https://github.com/srispb3710"
+    - title: "<a href='/projects/' style='text-decoration:none;color:inherit;'>ML Policy Lab</a>"
+      content: "Bias audit + model selection + temporal evaluation for policy triage."
+      image: /images/projects/ml-policy-lab.jpg
+      badges: ["Evaluation", "Bias Audit", "Temporal Splits", "Python"]
+      links:
+        - icon: fab fa-github
+          url: "https://github.com/srispb3710/" # REPO_NAME
+        - icon: fas fa-file-pdf
+          url: "" # YOUR_ARTIFACT_LINK
 
-      - title: "ANLP VQA"
-        content: "Oracle trajectories + fine-tuning + improved VQA reasoning performance."
-        image: /images/projects/vqa.jpg
-        badges:
-          - "Multimodal"
-          - "VQA"
-          - "Fine-tuning"
-          - "Evaluation"
-        links:
-          - icon: fab fa-github
-            url: "https://github.com/srispb3710"
+    - title: "<a href='/projects/' style='text-decoration:none;color:inherit;'>ANLP RAG System</a>"
+      content: "Scraping + retrieval/reranking + EM/F1 evaluation for QA."
+      image: /images/projects/rag.jpg
+      badges: ["RAG", "Retrieval", "Reranking", "Evaluation"]
+      links:
+        - icon: fab fa-github
+          url: "https://github.com/srispb3710" # REPO_NAME
+        - icon: fas fa-link
+          url: "" # YOUR_DEMO_OR_REPORT_LINK
 
-      - title: "Capstone VSG System"
-        content: "NLP override reasons + regression + scaling for CJ decision workflows."
-        image: /images/projects/capstone.jpg
-        badges:
-          - "NLP"
-          - "Regression"
-          - "CJ"
-          - "Decision Support"
-        links:
-          - icon: fab fa-github
-            url: "https://github.com/srispb3710"
+    - title: "<a href='/projects/' style='text-decoration:none;color:inherit;'>ANLP VQA</a>"
+      content: "Oracle trajectories + fine-tuning + improved VQA reasoning."
+      image: /images/projects/vqa.jpg
+      badges: ["Multimodal", "VQA", "Fine-tuning", "Evaluation"]
+      links:
+        - icon: fab fa-github
+          url: "https://github.com/srispb3710" # REPO_NAME
+        - icon: fas fa-file-alt
+          url: "" # YOUR_POSTER_OR_REPORT_LINK
 
-      - title: "Amazon Reviews Classifier via AzureML"
-        content: "Classic NLP sentiment model + AzureML deployment/debugging."
-        image: /images/projects/amazon-reviews.jpg
-        badges:
-          - "Classic NLP"
-          - "AzureML"
-          - "Deployment"
-        links:
-          - icon: fab fa-github
-            url: "https://github.com/srispb3710"
+    - title: "<a href='/projects/' style='text-decoration:none;color:inherit;'>Capstone VSG System</a>"
+      content: "NLP override reasons + regression + scaling for CJ workflows."
+      image: /images/projects/capstone.jpg
+      badges: ["NLP", "Regression", "CJ", "Decision Support"]
+      links:
+        - icon: fab fa-github
+          url: "https://github.com/srispb3710" # REPO_NAME
+        - icon: fas fa-file-powerpoint
+          url: "" # YOUR_DECK_LINK
 
-      - title: "Revenue Anomaly Detection System"
-        content: "Goldman Sachs revenue anomaly detection project"
-        image: /images/projects/goldman.jpg
-        badges:
-          - "Automation"
-          - "Analytics"
-          - "Production"
-        links:
-          - icon: fab fa-linkedin
-            url: "https://www.linkedin.com/in/spbhamidipati/"
+    - title: "<a href='/projects/' style='text-decoration:none;color:inherit;'>Amazon Reviews Classifier (AzureML)</a>"
+      content: "Classic NLP sentiment model + AzureML deployment/debugging."
+      image: /images/projects/amazon-reviews.jpg
+      badges: ["Classic NLP", "AzureML", "Deployment"]
+      links:
+        - icon: fab fa-github
+          url: "https://github.com/srispb3710/" # REPO_NAME
+        - icon: fas fa-link
+          url: "" # YOUR_ARTIFACT_LINK
+
+    - title: "<a href='/projects/' style='text-decoration:none;color:inherit;'>Revenue Anomaly Detection (Goldman)</a>"
+      content: "Production analytics + automation for financial monitoring."
+      image: /images/projects/goldman.jpg
+      badges: ["Automation", "Analytics", "Production", "Finance"]
+      links:
+        - icon: fas fa-link
+          url: ""  # YOUR_CASE_STUDY_LINK 
+        - icon: fab fa-linkedin
+          url: "https://www.linkedin.com/in/spbhamidipati/"
+
 
   # Skills
   # NOTE: Hugo Profile theme doesn't have a separate "skills" section
