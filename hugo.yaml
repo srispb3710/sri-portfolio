@@ -379,9 +379,9 @@ params:
   contact:
     enable: true
     title: "Contact"
-    content: "Want to collaborate or chat about roles? Email is best."
-    btnName: "Email me"
-    btnLink: "mailto:YOUR_EMAIL_HERE"
+    content: "Any questions, feedback, or want to connect, please feel free to reach me here!"
+    btnName: "Email"
+    btnLink: "mailto:srib@andrew.cmu.edu"
 
   footer:
     recentPosts:
