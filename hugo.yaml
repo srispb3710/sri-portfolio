@@ -45,10 +45,15 @@ Menus:
       url: /projects/
       weight: 3
 
+    - identifier: skills
+      name: Skills
+      url: /skills/
+      weight: 4
+
     - identifier: contact
       name: Contact
       url: /contact/
-      weight: 4
+      weight: 5
 
 # Menus:
 #   main:
@@ -174,9 +179,9 @@ params:
     # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
     brandName: "Sri Bhamidipati"
     showBrandLogo: false # Show brand logo in nav bar | default is true
+    align: me-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
     disableSearch: false
     searchPlaceholder: "Search"
-    align: me-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
     stickyNavBar:
       enable: true
       showOnScrollUp: true
@@ -223,109 +228,109 @@ params:
         - icon: fab fa-github
           url: "https://github.com/srispb3710"
 
-  about:
-    enable: true
-    title: ""
-    image: ""
-    content: |-
-      <style>
-        /* Skills 3-col */
-        .skills-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:40px; margin-top:18px; }
-        .skills-col h4 { margin-bottom:12px; }
-        .skills-col p { margin: 0 0 14px 0; opacity: 0.9; line-height: 1.5; }
-        @media (max-width: 900px){ .skills-grid{grid-template-columns:1fr;} }
+  # about:
+  #   enable: true
+  #   title: ""
+  #   image: ""
+  #   content: |-
+  #     <style>
+  #       /* Skills 3-col */
+  #       .skills-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:40px; margin-top:18px; }
+  #       .skills-col h4 { margin-bottom:12px; }
+  #       .skills-col p { margin: 0 0 14px 0; opacity: 0.9; line-height: 1.5; }
+  #       @media (max-width: 900px){ .skills-grid{grid-template-columns:1fr;} }
 
-        /* Artifact cards */
-        .artifact-grid { display:grid; grid-template-columns: repeat(3, 1fr); gap:18px; margin-top:16px; }
-        @media (max-width: 1100px){ .artifact-grid{grid-template-columns: repeat(2,1fr);} }
-        @media (max-width: 700px){ .artifact-grid{grid-template-columns: 1fr;} }
+  #       /* Artifact cards */
+  #       .artifact-grid { display:grid; grid-template-columns: repeat(3, 1fr); gap:18px; margin-top:16px; }
+  #       @media (max-width: 1100px){ .artifact-grid{grid-template-columns: repeat(2,1fr);} }
+  #       @media (max-width: 700px){ .artifact-grid{grid-template-columns: 1fr;} }
 
-        .artifact-card {
-          display:block; padding:18px; border:1px solid rgba(0,0,0,0.12);
-          border-radius:16px; text-decoration:none; background:#fff;
-          transition: transform .12s ease, box-shadow .12s ease;
-        }
-        .artifact-card:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.08); }
-        .artifact-title { font-weight:700; margin-bottom:6px; }
-        .artifact-sub { opacity:0.8; font-size: 0.95rem; margin:0; }
+  #       .artifact-card {
+  #         display:block; padding:18px; border:1px solid rgba(0,0,0,0.12);
+  #         border-radius:16px; text-decoration:none; background:#fff;
+  #         transition: transform .12s ease, box-shadow .12s ease;
+  #       }
+  #       .artifact-card:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.08); }
+  #       .artifact-title { font-weight:700; margin-bottom:6px; }
+  #       .artifact-sub { opacity:0.8; font-size: 0.95rem; margin:0; }
 
-        /* Jump row above heading */
-        .jump-row { display:flex; gap:22px; flex-wrap:wrap; margin-bottom:18px; font-weight:600; }
-        .jump-row a { text-decoration:none; }
-      </style>
+  #       /* Jump row above heading */
+  #       .jump-row { display:flex; gap:22px; flex-wrap:wrap; margin-bottom:18px; font-weight:600; }
+  #       .jump-row a { text-decoration:none; }
+  #     </style>
 
-      <!-- Jump row ABOVE heading -->
-      <div class="jump-row">
-        <a href="#featured-artifacts">Featured Artifacts</a>
-        <a href="#industry-experience">Industry Experience</a>
-        <a href="#skills-section">Skills</a>
-        <a href="#coursework">Coursework</a>
-      </div>
+  #     <!-- Jump row ABOVE heading -->
+  #     <div class="jump-row">
+  #       <a href="#featured-artifacts">Featured Artifacts</a>
+  #       <a href="#industry-experience">Industry Experience</a>
+  #       <a href="#skills-section">Skills</a>
+  #       <a href="#coursework">Coursework</a>
+  #     </div>
 
-      <h2 id="featured-artifacts">Featured Artifacts</h2>
+  #     <h2 id="featured-artifacts">Featured Artifacts</h2>
 
-      <!-- Artifact buttons styled like cards -->
-      <div class="artifact-grid">
-        <a class="artifact-card" href="/resume.pdf" target="_blank">
-          <div class="artifact-title">Resume (PDF)</div>
-          <p class="artifact-sub">One-page overview</p>
-        </a>
+  #     <!-- Artifact buttons styled like cards -->
+  #     <div class="artifact-grid">
+  #       <a class="artifact-card" href="/resume.pdf" target="_blank">
+  #         <div class="artifact-title">Resume (PDF)</div>
+  #         <p class="artifact-sub">One-page overview</p>
+  #       </a>
 
-        <a class="artifact-card" href="YOUR_PROJECT_DECK_LINK" target="_blank">
-          <div class="artifact-title">Best Project Deck</div>
-          <p class="artifact-sub">Capstone or ML Policy Lab</p>
-        </a>
+  #       <a class="artifact-card" href="YOUR_PROJECT_DECK_LINK" target="_blank">
+  #         <div class="artifact-title">Best Project Deck</div>
+  #         <p class="artifact-sub">Capstone or ML Policy Lab</p>
+  #       </a>
 
-        <a class="artifact-card" href="YOUR_TECH_REPORT_LINK" target="_blank">
-          <div class="artifact-title">Best Technical Report</div>
-          <p class="artifact-sub">ANLP VQA or Capstone report</p>
-        </a>
+  #       <a class="artifact-card" href="YOUR_TECH_REPORT_LINK" target="_blank">
+  #         <div class="artifact-title">Best Technical Report</div>
+  #         <p class="artifact-sub">ANLP VQA or Capstone report</p>
+  #       </a>
 
-        <a class="artifact-card" href="YOUR_POSTER_LINK" target="_blank">
-          <div class="artifact-title">Best Poster</div>
-          <p class="artifact-sub">ANLP poster</p>
-        </a>
+  #       <a class="artifact-card" href="YOUR_POSTER_LINK" target="_blank">
+  #         <div class="artifact-title">Best Poster</div>
+  #         <p class="artifact-sub">ANLP poster</p>
+  #       </a>
 
-        <a class="artifact-card" href="https://github.com/srispb3710" target="_blank">
-          <div class="artifact-title">GitHub</div>
-          <p class="artifact-sub">Code + notebooks (private/public)</p>
-        </a>
+  #       <a class="artifact-card" href="https://github.com/srispb3710" target="_blank">
+  #         <div class="artifact-title">GitHub</div>
+  #         <p class="artifact-sub">Code + notebooks (private/public)</p>
+  #       </a>
 
-        <a class="artifact-card" href="https://www.linkedin.com/in/spbhamidipati/" target="_blank">
-          <div class="artifact-title">LinkedIn</div>
-          <p class="artifact-sub">Experience + highlights</p>
-        </a>
-      </div>
+  #       <a class="artifact-card" href="https://www.linkedin.com/in/spbhamidipati/" target="_blank">
+  #         <div class="artifact-title">LinkedIn</div>
+  #         <p class="artifact-sub">Experience + highlights</p>
+  #       </a>
+  #     </div>
 
-      <h2 id="skills-section" style="margin-top:44px;">Skills</h2>
+  #     <h2 id="skills-section" style="margin-top:44px;">Skills</h2>
 
-      <div class="skills-grid">
-        <div class="skills-col">
-          <h4>Modeling & Analytics</h4>
-          <p><strong>Classic ML</strong><br/>Regression, tree-based models, evaluation</p>
-          <p><strong>NLP</strong><br/>Text classification, RAG, embeddings</p>
-          <p><strong>Multimodal ML</strong><br/>VQA, vision-language evaluation</p>
-        </div>
+  #     <div class="skills-grid">
+  #       <div class="skills-col">
+  #         <h4>Modeling & Analytics</h4>
+  #         <p><strong>Classic ML</strong><br/>Regression, tree-based models, evaluation</p>
+  #         <p><strong>NLP</strong><br/>Text classification, RAG, embeddings</p>
+  #         <p><strong>Multimodal ML</strong><br/>VQA, vision-language evaluation</p>
+  #       </div>
 
-        <div class="skills-col">
-          <h4>Data & Systems</h4>
-          <p><strong>Data Engineering</strong><br/>Cleaning, feature pipelines</p>
-          <p><strong>Forecasting</strong><br/>Time series modeling</p>
-          <p><strong>Optimization</strong><br/>Decision & risk modeling</p>
-        </div>
+  #       <div class="skills-col">
+  #         <h4>Data & Systems</h4>
+  #         <p><strong>Data Engineering</strong><br/>Cleaning, feature pipelines</p>
+  #         <p><strong>Forecasting</strong><br/>Time series modeling</p>
+  #         <p><strong>Optimization</strong><br/>Decision & risk modeling</p>
+  #       </div>
 
-        <div class="skills-col">
-          <h4>Tools</h4>
-          <p><strong>Languages</strong><br/>Python · SQL · R</p>
-          <p><strong>ML</strong><br/>PyTorch · scikit-learn · HuggingFace</p>
-          <p><strong>Infra</strong><br/>AzureML · AWS · Git</p>
-        </div>
-      </div>
+  #       <div class="skills-col">
+  #         <h4>Tools</h4>
+  #         <p><strong>Languages</strong><br/>Python · SQL · R</p>
+  #         <p><strong>ML</strong><br/>PyTorch · scikit-learn · HuggingFace</p>
+  #         <p><strong>Infra</strong><br/>AzureML · AWS · Git</p>
+  #       </div>
+  #     </div>
 
   # Industry Experience
   experience:
     enable: true
-    title: "<span id='industry-experience'>Industry Experience</span>"
+    title: "Experience
     items:
       - company: "Goldman Sachs"
         companyUrl: "https://www.goldmansachs.com/"
@@ -335,16 +340,16 @@ params:
             content: |-
               Built ML/analytics tooling spanning data engineering, software, and audit automation.
 
-              - **Impact:** (add your strongest metric here)
-              - **Impact:** (add your second strongest metric here)
+              - **Impact:**
+              - **Impact:**
 
-      - company: "CMU Research (UPMC)"
-        companyUrl: "https://www.cmu.edu/"
-        jobs:
-          - name: "Research Analyst"
-            date: "—"
-            content: |-
-              Workflow mapping + analytics support for healthcare operations and clinical systems.
+      # - company: "CMU Research (UPMC)"
+      #   companyUrl: "https://www.cmu.edu/"
+      #   jobs:
+      #     - name: "Research Analyst"
+      #       date: "—"
+      #       content: |-
+      #         Workflow mapping + analytics support for healthcare operations and clinical systems.
 
   # Tracks (6 tiles) - implemented using Achievements tiles
   achievements:
@@ -367,7 +372,7 @@ params:
   # Featured Projects (6 cards max)
   projects:
     enable: true
-    title: "Featured Projects"
+    title: "Featured Projects — <a href='/projects/' style='font-size:0.9rem;'>View all →</a>"
     items:
       - title: "ML Policy Lab"
         content: "Bias audit + model selection + temporal evaluation for policy triage."
