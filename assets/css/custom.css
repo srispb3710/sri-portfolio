@@ -121,3 +121,44 @@ section#education .card:hover {
 .project-card .project-footer{
   border-top: 1px solid rgba(0,0,0,0.10);
 }
+
+/* ===== FIX: Featured Projects should be 3-up grid again ===== */
+#projects .row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  margin-left: calc(-0.5 * var(--bs-gutter-x, 1.5rem));
+  margin-right: calc(-0.5 * var(--bs-gutter-x, 1.5rem));
+}
+
+#projects .row > [class*="col-"] {
+  padding-left: calc(0.5 * var(--bs-gutter-x, 1.5rem));
+  padding-right: calc(0.5 * var(--bs-gutter-x, 1.5rem));
+  width: 100%;
+}
+
+/* LG: 3 per row */
+@media (min-width: 992px) {
+  #projects .row > .col-lg-4 {
+    width: 33.333333% !important;
+  }
+}
+
+/* MD: 2 per row */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #projects .row > .col-md-6 {
+    width: 50% !important;
+  }
+}
+
+/* SM: 1 per row */
+@media (max-width: 767.98px) {
+  #projects .row > [class*="col-"] {
+    width: 100% !important;
+  }
+}
+
+/* Make sure the card fills the column (not wider) */
+#projects .project-card {
+  width: 100% !important;
+  max-width: 100% !important;
+}
