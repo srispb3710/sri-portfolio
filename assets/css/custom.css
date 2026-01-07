@@ -1,23 +1,69 @@
-/* Navbar layout: menus left, search right, theme toggle furthest right */
+/* ===== NAVBAR: brand left, everything else right, with custom order ===== */
+
+/* Make the collapse area a right-aligned flex row */
 nav.navbar .navbar-collapse {
   display: flex !important;
   align-items: center;
+  justify-content: flex-end !important;
   width: 100%;
 }
 
+/* Keep the brand pinned left */
+nav.navbar .navbar-brand {
+  margin-right: auto !important;
+}
+
+/* Make sure the right-side items stay in one row and can be reordered */
+nav.navbar .navbar-collapse > * {
+  display: flex;
+  align-items: center;
+}
+
+/* 1) Nav links first on the right */
 nav.navbar .navbar-nav {
-  margin-right: 12px;
+  order: 1;
+  margin: 0 !important;
 }
 
-/* Push search form to the right */
-nav.navbar form {
-  margin-left: auto !important;
-}
-
-/* Keep theme toggle furthest right */
+/* 2) Theme toggle second */
 nav.navbar .theme-toggle,
+nav.navbar button[aria-label*="theme"],
 nav.navbar .mode,
-nav.navbar .darkmode,
-nav.navbar button[aria-label*="theme"] {
-  margin-left: 12px !important;
+nav.navbar .darkmode {
+  order: 2;
+  margin-left: 14px !important;
+}
+
+/* 3) Search LAST (after toggle) */
+nav.navbar form {
+  order: 3;
+  margin-left: 14px !important;
+}
+
+/* Optional: keep search input from being comically wide */
+nav.navbar form input[type="search"],
+nav.navbar form input {
+  width: 220px;
+  max-width: 30vw;
+}
+
+
+/* ===== EDUCATION: make cards pop ===== */
+#education .card,
+section#education .card {
+  border-radius: 18px;
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+#education .card .card-title,
+section#education .card .card-title {
+  font-weight: 800;
+  letter-spacing: -0.2px;
+}
+
+#education .card:hover,
+section#education .card:hover {
+  transform: translateY(-2px);
+  transition: transform 0.12s ease;
 }
