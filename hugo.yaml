@@ -151,11 +151,12 @@ params:
     enable: true
     intro: ""
     title: "Sri Pranavi Bhamidipati"
-    subtitle: "Appled Data Scientist"
+    subtitle: "Applied Data Scientist"
     content: >-
-      Applied Data Scientist focused on classic ML + applied NLP (RAG, multimodal, evaluation) and production-minded analytics—shipped across finance, criminal justice, healthcare, and climate/energy.
+      Applied Data Scientist focused on classic ML + applied NLP (RAG, multimodal, evaluation) and mission-driven analytics, shipped across finance, criminal justice, healthcare, and climate/energy.
       <br/><br/>
-      MS Public Policy & Management & Data Science, Carnegie Mellon University · BS Data Science & Economics, Purdue University
+      MS Public Policy & Management, Data Science · Carnegie Mellon University
+      BS Data Science & Economics · Purdue University
     image: "/images/hero.svg"
     bottomImage:
       enable: true
@@ -185,24 +186,14 @@ params:
     title: "Featured Artifacts"
     image: ""
     content: |-
-      A quick proof row—click any artifact.
-
-  # about:
-  #   enable: true
-  #   title: "Featured Artifacts"
-  #   image: ""
-  #   content: |-
-  #     <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:10px;">
-  #       <a href="/resume.pdf" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">Resume (PDF)</a>
-  #       <a href="YOUR_PROJECT_DECK_LINK" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">Best Project Deck</a>
-  #       <a href="YOUR_TECH_REPORT_LINK" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">Best Technical Report</a>
-  #       <a href="YOUR_POSTER_LINK" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">Best Poster</a>
-  #       <a href="https://github.com/srispb3710" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">GitHub (Private)</a>
-  #       <a href="https://www.linkedin.com/in/spbhamidipati/" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">LinkedIn</a>
-  #     </div>
-  #   skills:
-  #     enable: false
-
+      <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:10px;">
+        <a href="/resume.pdf" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">Resume (PDF)</a>
+        <a href="YOUR_PROJECT_DECK_LINK" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">Best Project Deck</a>
+        <a href="YOUR_TECH_REPORT_LINK" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">Best Technical Report</a>
+        <a href="YOUR_POSTER_LINK" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">Best Poster</a>
+        <a href="https://github.com/srispb3710" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">GitHub (Private)</a>
+        <a href="https://www.linkedin.com/in/spbhamidipati/" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">LinkedIn</a>
+      </div>
     skills:
       enable: true
       title: "Skills"
