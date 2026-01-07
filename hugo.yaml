@@ -164,14 +164,13 @@ params:
 
   # If you want to customize the menu, you can change it here
   navbar:
-    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
     # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
     # showBrandLogo: false # Show brand logo in nav bar | default is true
     brandName: "Sri Bhamidipati"
     showBrandLogo: false
     disableSearch: false
     searchPlaceholder: "Search"
-    align: me-auto
+    align: me-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
     stickyNavBar:
       enable: true
       showOnScrollUp: true
