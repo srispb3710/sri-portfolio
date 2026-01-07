@@ -162,3 +162,6 @@ section#education .card:hover {
   width: 100% !important;
   max-width: 100% !important;
 }
+
+/* DEBUG: prove custom.css loads */
+body { outline: 6px solid hotpink !important; }
