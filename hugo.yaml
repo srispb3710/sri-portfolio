@@ -330,7 +330,7 @@ params:
   # Industry Experience
   experience:
     enable: true
-    title: "Experience
+    title: "Experience"
     items:
       - company: "Goldman Sachs"
         companyUrl: "https://www.goldmansachs.com/"
