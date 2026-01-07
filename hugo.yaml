@@ -151,8 +151,7 @@ params:
     lineHeight: 1.5 # default: 1.5
     textAlign: left # default: left
 
-  customCSS:
-    - "css/custom.css"
+  customCSS: true
 
   # color preference
   # When using hex codes for colors, quotations must be used along with the # sign

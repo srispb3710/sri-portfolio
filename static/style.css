@@ -1,0 +1,173 @@
+/* ===== NAVBAR: brand left, everything else right, with custom order ===== */
+
+/* Make the collapse area a right-aligned flex row */
+nav.navbar .navbar-collapse {
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-end !important;
+  width: 100%;
+}
+
+/* Keep the brand pinned left */
+nav.navbar .navbar-brand {
+  margin-right: auto !important;
+}
+
+/* Make sure the right-side items stay in one row and can be reordered */
+/* nav.navbar .navbar-collapse > * {
+  display: flex;
+  align-items: center;
+} */
+
+/* Only make the nav list a flex row (don’t flex every child) */
+nav.navbar .navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* 1) Nav links first on the right */
+nav.navbar .navbar-nav {
+  order: 1;
+  margin: 0 !important;
+}
+
+/* 2) Theme toggle second */
+nav.navbar .theme-toggle,
+nav.navbar button[aria-label*="theme"],
+nav.navbar .mode,
+nav.navbar .darkmode {
+  order: 2;
+  margin-left: 14px !important;
+}
+
+/* 3) Search LAST (after toggle) */
+nav.navbar form {
+  order: 3;
+  margin-left: 14px !important;
+}
+
+/* Optional: keep search input from being comically wide */
+nav.navbar form input[type="search"],
+nav.navbar form input {
+  width: 220px;
+  max-width: 30vw;
+}
+
+
+/* ===== EDUCATION: make cards pop ===== */
+#education .card,
+section#education .card {
+  border-radius: 18px;
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+#education .card .card-title,
+section#education .card .card-title {
+  font-weight: 800;
+  letter-spacing: -0.2px;
+}
+
+#education .card:hover,
+section#education .card:hover {
+  transform: translateY(-2px);
+  transition: transform 0.12s ease;
+}
+
+/* ===== Project card: Title > Desc > Image > Tags (bottom-right) > Icons ===== */
+
+.project-card .project-title{
+  font-weight: 800;
+  letter-spacing: -0.2px;
+}
+
+.project-card .project-desc{
+  line-height: 1.5;
+  opacity: 0.92;
+}
+
+/* Image block (below description) */
+.project-card .project-image{
+  width: 100%;
+}
+
+.project-card .project-img{
+  width: 100%;
+  height: 170px;         /* adjust */
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+}
+
+/* Placeholder when you haven't added images yet */
+.project-card .project-image--placeholder{
+  height: 170px;         /* match project-img height */
+  border-radius: 14px;
+  background: rgba(0,0,0,0.04);
+}
+
+/* Tags aligned bottom-right above footer */
+.project-card .project-badges{
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.project-card .project-badge{
+  background: rgba(0,0,0,0.06) !important;
+  border: 1px solid rgba(0,0,0,0.08);
+  color: inherit;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+
+/* Divider line above icons row */
+.project-card .project-footer{
+  border-top: 1px solid rgba(0,0,0,0.10);
+}
+
+/* ===== FIX: Featured Projects should be 3-up grid again ===== */
+#projects .row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  margin-left: calc(-0.5 * var(--bs-gutter-x, 1.5rem));
+  margin-right: calc(-0.5 * var(--bs-gutter-x, 1.5rem));
+}
+
+#projects .row > [class*="col-"] {
+  padding-left: calc(0.5 * var(--bs-gutter-x, 1.5rem));
+  padding-right: calc(0.5 * var(--bs-gutter-x, 1.5rem));
+  width: 100%;
+}
+
+/* LG: 3 per row */
+@media (min-width: 992px) {
+  #projects .row > .col-lg-4 {
+    width: 33.333333% !important;
+  }
+}
+
+/* MD: 2 per row */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #projects .row > .col-md-6 {
+    width: 50% !important;
+  }
+}
+
+/* SM: 1 per row */
+@media (max-width: 767.98px) {
+  #projects .row > [class*="col-"] {
+    width: 100% !important;
+  }
+}
+
+/* Make sure the card fills the column (not wider) */
+#projects .project-card {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* DEBUG: prove custom.css loads */
+body { outline: 6px solid hotpink !important; }
