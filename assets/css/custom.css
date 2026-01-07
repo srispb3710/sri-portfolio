@@ -1,0 +1,23 @@
+/* Navbar layout: menus left, search right, theme toggle furthest right */
+nav.navbar .navbar-collapse {
+  display: flex !important;
+  align-items: center;
+  width: 100%;
+}
+
+nav.navbar .navbar-nav {
+  margin-right: 12px;
+}
+
+/* Push search form to the right */
+nav.navbar form {
+  margin-left: auto !important;
+}
+
+/* Keep theme toggle furthest right */
+nav.navbar .theme-toggle,
+nav.navbar .mode,
+nav.navbar .darkmode,
+nav.navbar button[aria-label*="theme"] {
+  margin-left: 12px !important;
+}
