@@ -154,6 +154,8 @@ params:
     subtitle: "Appled Data Scientist"
     content: >-
       Applied Data Scientist focused on classic ML + applied NLP (RAG, multimodal, evaluation) and production-minded analytics—shipped across finance, criminal justice, healthcare, and climate/energy.
+      <br/><br/>
+      MS Public Policy & Management & Data Science, Carnegie Mellon University · BS Data Science & Economics, Purdue University
     image: "/images/hero.svg"
     bottomImage:
       enable: true
@@ -185,16 +187,35 @@ params:
     content: |-
       A quick proof row—click any artifact.
 
+  # about:
+  #   enable: true
+  #   title: "Featured Artifacts"
+  #   image: ""
+  #   content: |-
+  #     <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:10px;">
+  #       <a href="/resume.pdf" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">Resume (PDF)</a>
+  #       <a href="YOUR_PROJECT_DECK_LINK" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">Best Project Deck</a>
+  #       <a href="YOUR_TECH_REPORT_LINK" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">Best Technical Report</a>
+  #       <a href="YOUR_POSTER_LINK" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">Best Poster</a>
+  #       <a href="https://github.com/srispb3710" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">GitHub (Private)</a>
+  #       <a href="https://www.linkedin.com/in/spbhamidipati/" target="_blank" style="padding:8px 12px;border:1px solid #ccc;border-radius:999px;text-decoration:none;">LinkedIn</a>
+  #     </div>
+  #   skills:
+  #     enable: false
+
     skills:
       enable: true
-      title: ""
+      title: "Skills"
       items:
-        - "Resume (PDF)"
-        - "Best Project Deck"
-        - "Best Technical Report"
-        - "Best Poster"
-        - "GitHub (Private)"
-        - "LinkedIn"
+        - "Classic ML"
+        - "NLP · Text Classification"
+        - "RAG · Transformers · Retrieval"
+        - "Multimodal ML"
+        - "Time Series Forecasting"
+        - "Optimization & Decision Modeling"
+        - "Python · SQL · R"
+        - "PyTorch · scikit-learn · HuggingFace"
+        - "AzureML · AWS · Git"
 
   # Industry Experience
   experience:
