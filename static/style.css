@@ -1,22 +1,23 @@
-/* sanity check – remove later */
-body { outline: 4px solid hotpink; }
+/* =========================================================
+   FINAL STYLE.CSS — Hugo-Profile Safe Enhancements Only
+   ========================================================= */
 
 /* =========================
-   NAVBAR – minimal + safe
+   NAVBAR (CSS-only, SAFE)
    ========================= */
 
-/* Vertically center everything */
+/* Vertically center navbar content */
 nav.navbar,
 nav.navbar .container-fluid {
   align-items: center;
 }
 
-/* Search box far left */
+/* Search box far LEFT */
 nav.navbar form {
   margin-right: auto !important;
 }
 
-/* Brand: single line, vertically centered */
+/* Brand name: single line, vertically centered */
 nav.navbar .navbar-brand,
 nav.navbar .navbar-brand a {
   display: flex;
@@ -25,29 +26,37 @@ nav.navbar .navbar-brand a {
   line-height: 1;
 }
 
-/* Nav links + theme toggle aligned nicely */
+/* Nav links + theme toggle stay right */
 nav.navbar .navbar-nav {
   align-items: center;
 }
 
 /* =========================
-   HERO – subtle polish
+   HERO (polish only)
    ========================= */
 
-/* Slightly reduce name so it never wraps */
+/* Make sure name never wraps */
 .hero-title,
 .hero h1 {
   font-size: clamp(2.4rem, 5vw, 3rem);
   white-space: nowrap;
 }
 
-/* Keep hero content readable & compact */
+/* Keep hero text readable */
 .hero-content p {
   max-width: 900px;
 }
 
+/* Social icons modest & aligned */
+.hero-social-links a {
+  opacity: 0.85;
+}
+.hero-social-links a:hover {
+  opacity: 1;
+}
+
 /* =========================
-   EDUCATION – subtle elevation
+   EDUCATION (subtle lift)
    ========================= */
 
 #education .card {
@@ -62,7 +71,7 @@ nav.navbar .navbar-nav {
 }
 
 /* =========================
-   FEATURED PROJECTS – grid integrity
+   FEATURED PROJECTS (KEEP LOOK)
    ========================= */
 
 #projects .project-card {
@@ -80,7 +89,7 @@ nav.navbar .navbar-nav {
 }
 
 /* =========================
-   DARK MODE – readability guardrails
+   DARK MODE READABILITY
    ========================= */
 
 [data-theme="dark"] .card,
