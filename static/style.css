@@ -2,33 +2,27 @@
    FINAL STYLE.CSS — Hugo-Profile Safe Enhancements Only
    ========================================================= */
 
-/* =========================
-   NAVBAR (CSS-only, SAFE)
-   ========================= */
+/* ===== NAVBAR: proper layout ===== */
 
-/* Vertically center navbar content */
-nav.navbar,
-nav.navbar .container-fluid {
-  align-items: center;
-}
-
-/* Search box far LEFT */
-nav.navbar form {
-  margin-right: auto !important;
-}
-
-/* Brand name: single line, vertically centered */
-nav.navbar .navbar-brand,
-nav.navbar .navbar-brand a {
-  display: flex;
-  align-items: center;
+nav.navbar .navbar-brand {
   white-space: nowrap;
-  line-height: 1;
+  font-weight: 600;
 }
 
-/* Nav links + theme toggle stay right */
-nav.navbar .navbar-nav {
-  align-items: center;
+nav.navbar form input {
+  max-width: 220px;
+}
+
+/* Mobile: stack naturally */
+@media (max-width: 991px) {
+  nav.navbar .container-fluid {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  nav.navbar .navbar-brand {
+    margin: 0;
+  }
 }
 
 /* =========================
