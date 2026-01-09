@@ -1,368 +1,243 @@
-baseURL: "https://hugo-profile.netlify.app"
-languageCode: "en-us"
-title: "Sri Bhamidipati"
-theme: hugo-profile
-
+baseURL: https://sribhamidipati.netlify.app/
+languageCode: en-us
+title: Sri Bhamidipati
 outputs:
   home:
-    - "HTML"
-    - "RSS"
-    - "JSON"
+  - HTML
+  - RSS
+  - JSON
   page:
-    - "HTML"
-    - "RSS"
-
+  - HTML
+  - RSS
 enableRobotsTXT: true
-
-#services:
-  #googleAnalytics:
-    #id: G-MEASUREMENT_ID
-  #disqus:
-    #shortname: your-disqus-shortname
-
 pagination:
   pagerSize: 3
-
 markup:
   goldmark:
     renderer:
       unsafe: true
-
 Menus:
   main:
-    - identifier: home
-      name: Home
-      url: /
-      weight: 1
-
-    - identifier: experience
-      name: Experience
-      url: /experience/
-      weight: 2
-
-    - identifier: projects
-      name: Projects
-      url: /projects/
-      weight: 3
-
-    - identifier: skills
-      name: Skills
-      url: /skills/
-      weight: 4
-
-    - identifier: about
-      name: About
-      url: /about/
-      weight: 5
-
-
+  - identifier: home
+    name: Home
+    url: /#home
+    weight: 1
+  - identifier: about
+    name: About
+    url: /#about
+    weight: 2
+  - identifier: experience
+    name: Experience
+    url: /#experience
+    weight: 3
+  - identifier: projects
+    name: Projects
+    url: /#projects
+    weight: 4
+  - identifier: skills
+    name: Skills
+    url: /#skills
+    weight: 5
+  - identifier: contact
+    name: Contact
+    url: /#contact
+    weight: 6
 params:
-  title: "Sri Bhamidipati"
-  description: "Applied Data Scientist portfolio"
-  # staticPath: ""  # The path to serve the static files from
-  favicon: "/fav.png"
-
-  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
-  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
-  # Note the lack of "" in true, it should be of boolean type.
+  title: Sri Bhamidipati
+  description: Applied Data Scientist portfolio
+  favicon: /fav.png
   useBootstrapCDN: false
-  
-  # If you want to load dynamically responsive images from Cloudinary
-  # This requires your images to be uploaded + hosted on Cloudinary
-  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
-  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
-
-  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
   mathjax: false
-  
-  # Whether the fade animations on the home page will be enabled
   animate: true
-
   theme:
     disableThemeToggle: false
-    defaultTheme: "light" # dark
-
+    defaultTheme: light
   font:
-    fontSize: 1rem # default: 1rem
-    fontWeight: 400 # default: 400
-    lineHeight: 1.5 # default: 1.5
-    textAlign: left # default: left
-
-  customCSS:
-    - "style.css"
-
-  # color preference
-  # When using hex codes for colors, quotations must be used along with the # sign
-  # color:
-  #   textColor: "#343a40"
-  #   secondaryTextColor: "#6c757d"
-  #   textLinkColor: "#007bff"
-  #   backgroundColor: "#eaedf0"
-  #   secondaryBackgroundColor: "#64ffda1a"
-  #   primaryColor: "#007bff"
-  #   secondaryColor: "#f8f9fa"
-
-  #   darkmode:
-  #     textColor: "#e4e6eb"
-  #     secondaryTextColor: "#b0b3b8"
-  #     textLinkColor: "#ffffff"
-  #     backgroundColor: "#18191a"
-  #     secondaryBackgroundColor: "#212529"
-  #     primaryColor: "#ffffff"
-  #     secondaryColor: "#212529"
-
-  # If you want to customize the menu, you can change it here
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: left
   navbar:
-    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
-    brandName: "Sri Bhamidipati"
-    showBrandLogo: false # Show brand logo in nav bar | default is true
-    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    brandName: Sri Bhamidipati
+    showBrandLogo: false
+    align: ms-auto
     disableSearch: false
-    searchPlaceholder: "Search"
+    searchPlaceholder: Search
     stickyNavBar:
       enable: true
       showOnScrollUp: true
     enableSeparator: false
-    # menus:
-    #   disableAbout: true
-    #   disableExperience: true
-    #   disableEducation: true
-    #   disableProjects: true
-    #   disableAchievements: true
-    #   disableContact: true
-
-  # Hero
   hero:
     enable: true
-    intro: ""
-    title: "Sri Pranavi Bhamidipati"
-    subtitle: "AI + Analytics | Products & Pipelines | Public Impact"
-    content: >-
-      Applied Data Scientist focused on classic ML + applied NLP (RAG, multimodal, evaluation) and mission-driven analytics, shipped across finance, healthcare, climate/energy, and criminal justice.
-    #  <br/><br/>
-    # MS Public Policy Management & Data Science · Carnegie Mellon University
-    # <br/>
-    # BS Data Science & Economics · Purdue University
-    image: "/images/Sri 03 website.JPG"
+    intro: ''
+    title: Sri Pranavi Bhamidipati
+    subtitle: AI + Analytics | Products & Pipelines | Public Impact
+    content: Applied Data Scientist focused on classic ML + applied NLP (RAG, multimodal,
+      evaluation) and mission-driven analytics, shipped across finance, healthcare,
+      climate/energy, and criminal justice.
+    image: /images/Sri 03 website.JPG
     bottomImage:
       enable: false
-    # roundImage: true # Make hero image circular | default false
     button:
       enable: true
-      name: "Resume (PDF)"
-      url: "/resume.pdf"
+      name: Resume (PDF)
+      url: /resume.pdf
       download: true
       newPage: true
-    # Icons row: LinkedIn • Resume • Email • GitHub
     socialLinks:
       fontAwesomeIcons:
-        - icon: fab fa-linkedin
-          url: "https://www.linkedin.com/in/spbhamidipati/"
-        - icon: fa fa-file-pdf
-          url: "/resume.pdf"
-        - icon: fa fa-envelope
-          url: "mailto:srib@andrew.cmu.edu"
-        - icon: fab fa-github
-          url: "https://github.com/srispb3710"
-
-  #   content: |-
-  #       /* Jump row above heading */
-  #       .jump-row { display:flex; gap:22px; flex-wrap:wrap; margin-bottom:18px; font-weight:600; }
-  #       .jump-row a { text-decoration:none; }
-  #     </style>
-
-  #     <!-- Jump row ABOVE heading -->
-  #     <div class="jump-row">
-  #       <a href="#featured-artifacts">Featured Artifacts</a>
-  #       <a href="#industry-experience">Industry Experience</a>
-  #       <a href="#skills-section">Skills</a>
-  #       <a href="#coursework">Coursework</a>
-  #     </div>
-
-  # Industry Experience
+      - icon: fab fa-linkedin
+        url: https://www.linkedin.com/in/spbhamidipati/
+      - icon: fa fa-file-pdf
+        url: /resume.pdf
+      - icon: fa fa-envelope
+        url: mailto:srib@andrew.cmu.edu
+      - icon: fab fa-github
+        url: https://github.com/srispb3710
   experience:
     enable: true
-    title: "Experience"
+    title: Experience
     items:
-      - company: "Goldman Sachs"
-        companyUrl: "https://www.goldmansachs.com/"
-        jobs:
-          - name: "Business Intelligence Analyst II"
-            date: "—"
-            content: |-
-              Built ML/analytics tooling spanning data engineering, software, and audit automation.
+    - company: Goldman Sachs
+      companyUrl: https://www.goldmansachs.com/
+      jobs:
+      - name: Business Intelligence Analyst II
+        date: —
+        content: 'Built ML/analytics tooling spanning data engineering, software,
+          and audit automation.
 
-              - **Impact:**
-              - **Impact:**
 
-      # - company: "CMU Research (UPMC)"
-      #   companyUrl: "https://www.cmu.edu/"
-      #   jobs:
-      #     - name: "Research Analyst"
-      #       date: "—"
-      #       content: |-
-      #         Workflow mapping + analytics support for healthcare operations and clinical systems.
+          - **Impact:**
 
-  # Tracks (6 tiles) - implemented using Achievements tiles
+          - **Impact:**'
   achievements:
     enable: false
-    title: "Tracks"
+    title: Tracks
     items:
-      - title: "Applied ML & Decision Systems"
-        content: "Modeling + evaluation for real decisions under constraints."
-      - title: "NLP, LLMs & Multimodal Evaluation"
-        content: "RAG, multimodal reasoning, reliability, and metrics."
-      - title: "Data Engineering & Analytics Products"
-        content: "Pipelines, feature engineering, reproducibility, production-minded work."
-      - title: "Finance & Risk Analytics"
-        content: "Automation, reporting systems, monitoring, and controls."
-      - title: "Criminal Justice & Public Sector Systems"
-        content: "Decision support, compliance, and interpretable workflows."
-      - title: "Climate, Energy & Infrastructure Analytics"
-        content: "Investment, forecasting, and energy systems analytics."
-
-  # Featured Projects (6 cards max)
+    - title: Applied ML & Decision Systems
+      content: Modeling + evaluation for real decisions under constraints.
+    - title: NLP, LLMs & Multimodal Evaluation
+      content: RAG, multimodal reasoning, reliability, and metrics.
+    - title: Data Engineering & Analytics Products
+      content: Pipelines, feature engineering, reproducibility, production-minded
+        work.
+    - title: Finance & Risk Analytics
+      content: Automation, reporting systems, monitoring, and controls.
+    - title: Criminal Justice & Public Sector Systems
+      content: Decision support, compliance, and interpretable workflows.
+    - title: Climate, Energy & Infrastructure Analytics
+      content: Investment, forecasting, and energy systems analytics.
   projects:
     enable: true
-    title: "Featured Projects"
+    title: Featured Projects
     items:
-
-      - title: "ML Policy Lab"
-        content: "Bias audit + model selection + temporal evaluation for policy triage."
-        # image: /images/projects/ml-policy-lab.jpg
-        badges: ["Evaluation", "Bias Audit", "Temporal Splits", "Python"]
-        links:
-          - icon: fas fa-link
-            url: "/projects/" 
-          - icon: fab fa-github
-            url: "https://github.com/srispb3710/" # REPO NAME
-
-      - title: "ANLP RAG System"
-        content: "Scraping + retrieval/reranking + EM/F1 evaluation for QA."
-        # image: /images/projects/rag.jpg
-        badges: ["RAG", "Retrieval", "Reranking", "Evaluation"]
-        links:
-          - icon: fas fa-link
-            url: "/projects/"
-          - icon: fab fa-github
-            url: "https://github.com/srispb3710/" # REPO NAME
-
-      - title: "ANLP VQA"
-        content: "Oracle trajectories + fine-tuning + improved VQA reasoning."
-        # image: /images/projects/vqa.jpg
-        badges: ["Multimodal", "VQA", "Fine-tuning", "Evaluation"]
-        links:
-          - icon: fas fa-link
-            url: "/projects/"
-          - icon: fab fa-github
-            url: "https://github.com/srispb3710/" # REPO NAME
-
-      - title: "Capstone VSG System"
-        content: "NLP override reasons + regression + scaling for CJ workflows."
-        # image: /images/projects/capstone.jpg
-        badges: ["NLP", "Regression", "CJ", "Decision Support"]
-        links:
-          - icon: fas fa-link
-            url: "/projects/"
-          - icon: fab fa-github # fa-file-powerpoint
-            url: "https://github.com/srispb3710/" # REPO NAME
-          
-      - title: "Amazon Reviews Classifier (AzureML)"
-        content: "Classic NLP sentiment model + AzureML deployment/debugging."
-        # image: /images/projects/amazon-reviews.jpg
-        badges: ["Classic NLP", "AzureML", "Deployment"]
-        links:
-          - icon: fas fa-link
-            url: "/projects/"
-          - icon: fab fa-github
-            url: "https://github.com/srispb3710/" # REPO NAME          
-
-      - title: "Revenue Anomaly Detection"
-        content: "Production analytics + automation for financial monitoring."
-        # image: /images/projects/goldman.jpg
-        badges: ["Automation", "Analytics", "Production", "Finance"]
-        links:
-          - icon: fas fa-link
-            url: "/projects/"  
-          - icon: fab fa-linkedin
-            url: "https://www.linkedin.com/in/spbhamidipati/"                
-
-  
-  
+    - title: ML Policy Lab
+      content: Bias audit + model selection + temporal evaluation for policy triage.
+      badges:
+      - Evaluation
+      - Bias Audit
+      - Temporal Splits
+      - Python
+      links:
+      - icon: fas fa-link
+        url: /projects/
+      - icon: fab fa-github
+        url: https://github.com/srispb3710/
+    - title: ANLP RAG System
+      content: Scraping + retrieval/reranking + EM/F1 evaluation for QA.
+      badges:
+      - RAG
+      - Retrieval
+      - Reranking
+      - Evaluation
+      links:
+      - icon: fas fa-link
+        url: /projects/
+      - icon: fab fa-github
+        url: https://github.com/srispb3710/
+    - title: ANLP VQA
+      content: Oracle trajectories + fine-tuning + improved VQA reasoning.
+      badges:
+      - Multimodal
+      - VQA
+      - Fine-tuning
+      - Evaluation
+      links:
+      - icon: fas fa-link
+        url: /projects/
+      - icon: fab fa-github
+        url: https://github.com/srispb3710/
+    - title: Capstone VSG System
+      content: NLP override reasons + regression + scaling for CJ workflows.
+      badges:
+      - NLP
+      - Regression
+      - CJ
+      - Decision Support
+      links:
+      - icon: fas fa-link
+        url: /projects/
+      - icon: fab fa-github
+        url: https://github.com/srispb3710/
+    - title: Amazon Reviews Classifier (AzureML)
+      content: Classic NLP sentiment model + AzureML deployment/debugging.
+      badges:
+      - Classic NLP
+      - AzureML
+      - Deployment
+      links:
+      - icon: fas fa-link
+        url: /projects/
+      - icon: fab fa-github
+        url: https://github.com/srispb3710/
+    - title: Revenue Anomaly Detection
+      content: Production analytics + automation for financial monitoring.
+      badges:
+      - Automation
+      - Analytics
+      - Production
+      - Finance
+      links:
+      - icon: fas fa-link
+        url: /projects/
+      - icon: fab fa-linkedin
+        url: https://www.linkedin.com/in/spbhamidipati/
   education:
     enable: true
-    title: "Education"
+    title: Education
     index: false
     items:
-      - title: "Carnegie Mellon University"
-        school:
-          name: "M.S. Public Policy Management & Data Science"
-          url: "https://www.cmu.edu/"
-        date: "2024 – 2026"
-        content: |-
-          - Heinz College
-          - Focus: Applied ML, NLP, decision systems, policy
+    - title: Carnegie Mellon University
+      school:
+        name: M.S. Public Policy Management & Data Science
+        url: https://www.cmu.edu/
+      date: 2024 – 2026
+      content: '- Heinz College
 
-      - title: "Purdue University"
-        school:
-          name: "B.S. Data Science & Economics"
-          url: "https://www.purdue.edu/"
-        date: "2018 – 2022"
-        content: |-
-          - Concentrations: algorithms, big data, data engineering
-          - Coursework: ML, stats, systems
+        - Focus: Applied ML, NLP, decision systems, policy'
+    - title: Purdue University
+      school:
+        name: B.S. Data Science & Economics
+        url: https://www.purdue.edu/
+      date: 2018 – 2022
+      content: '- Concentrations: algorithms, big data, data engineering
 
-  # Contact
+        - Coursework: ML, stats, systems'
   contact:
     enable: false
-    title: "Contact"
-    content: "Any questions, feedback, or want to connect, please feel free to reach me here!"
-    btnName: "Email"
-    btnLink: "mailto:srib@andrew.cmu.edu"
-
+    title: Contact
+    content: Any questions, feedback, or want to connect, please feel free to reach
+      me here!
+    btnName: Email
+    btnLink: mailto:srib@andrew.cmu.edu
   footer:
     recentPosts:
-      # path: "blogs"
-      # count: 3
-      # title: Recent Posts
-      # enable: true
-      # disableFeaturedImage: false
       enable: false
     socialNetworks:
       github: https://github.com/srispb3710
       linkedin: https://www.linkedin.com/in/spbhamidipati/
       email: mailto:sri@andrew.cmu.edu
-      # twitter: https://twitter.com
-      # instagram: https://instagram.com
-      # facebook: https://facebook.com
-
-  # List pages like blogs and posts
-  # listPages:
-  #   disableFeaturedImage: false
-
-  # Single pages like blog and post
-  # singlePages:
-  #   socialShare: true
-  #   readTime:
-  #     enable: true
-  #     content: "min read"
-  #   scrollprogress:
-  #     enable: true
-  #   tags:
-  #     openInNewTab: true
-
-  # For translations
-  # terms:
-  #   read: "Read"
-  #   toc: "Table Of Contents"
-  #   copyright: "All rights reserved"
-  #   pageNotFound: "Page not found"
-  #   emailText: "Check out this site"
-
-  # datesFormat:
-  #   article: "Jan 2, 2006"
-  #   articleList: "Jan 2, 2006"
-  #   articleRecent: "Jan 2, 2006"
-
-  #customScripts: -| # You can add custom scripts which will be added before </body> tag
-  #  <script type="text/javascript"><!-- any script here --></script>
+  site:
+    author: Sri Bhamidipati
+    accentColor: '#3b82f6'
+    metaDescription: Applied Data Scientist portfolio

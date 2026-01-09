@@ -1,25 +1,25 @@
-<nav class="navbar navbar-expand-lg">
-  <div class="container-fluid d-flex align-items-center">
+<header class="nav-wrap" id="top">
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a class="nav__brand" href="/#home">{{ .Site.Title }}</a>
 
-    <!-- SEARCH (LEFT) -->
-    <form class="d-flex me-auto" role="search">
-      <input
-        class="form-control"
-        type="search"
-        placeholder="{{ .Site.Params.navbar.searchPlaceholder }}"
-        aria-label="Search">
-    </form>
+      <div class="nav__links" role="navigation" aria-label="Primary">
+        {{ range .Site.Menus.main }}
+          <a class="nav__link" href="{{ .URL }}" data-nav-link="{{ .Identifier }}">{{ .Name }}</a>
+        {{ end }}
+      </div>
 
-    <!-- BRAND (CENTER) -->
-    <a class="navbar-brand mx-auto" href="/">
-      {{ .Site.Params.navbar.brandName }}
-    </a>
+      <div class="nav__actions">
+        <div class="nav__search">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          <input id="siteSearch" type="search" placeholder="Search" autocomplete="off" />
+          <div id="searchResults" class="search-results" aria-live="polite"></div>
+        </div>
 
-    <!-- NAV (RIGHT) -->
-    <div class="d-flex align-items-center ms-auto">
-      {{ partial "navbar/menu.html" . }}
-      {{ partial "navbar/theme.html" . }}
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle theme" title="Toggle theme">
+          <i class="fa-solid fa-moon" id="themeIcon" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
-
-  </div>
-</nav>
+  </nav>
+</header>
