@@ -1,0 +1,36 @@
+<section class="section hero" id="home">
+  <div class="container hero__inner">
+    <div class="hero__left">
+      <h1 class="hero__title">Hi, I'm {{ .Site.Params.hero.title | default .Site.Title }}</h1>
+      <p class="hero__subtitle">{{ .Site.Params.hero.subtitle }}</p>
+      <p class="hero__content">{{ .Site.Params.hero.content }}</p>
+
+      <div class="hero__cta">
+        {{ with .Site.Params.hero.button }}
+          {{ if .enable }}
+            <a class="btn btn--primary" href="{{ .url }}" {{ if .newPage }}target="_blank" rel="noopener"{{ end }}>
+              {{ .name }}
+            </a>
+          {{ end }}
+        {{ end }}
+        <a class="btn btn--ghost" href="/#about">Learn More <span aria-hidden="true">↓</span></a>
+      </div>
+
+      <div class="hero__social">
+        {{ with .Site.Params.hero.socialLinks.fontAwesomeIcons }}
+          {{ range . }}
+            <a class="icon-link" href="{{ .url }}" target="_blank" rel="noopener" aria-label="{{ .icon }}">
+              <i class="{{ .icon }}" aria-hidden="true"></i>
+            </a>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+
+    <div class="hero__right">
+      {{ with .Site.Params.hero.image }}
+        <img class="hero__avatar" src="{{ . }}" alt="Portrait of {{ $.Site.Title }}">
+      {{ end }}
+    </div>
+  </div>
+</section>

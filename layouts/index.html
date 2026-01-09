@@ -1,0 +1,65 @@
+{{ define "main" }}
+  <section class="page">
+    <div class="container">
+      <header class="page__header">
+        <h1 class="page__title">Projects</h1>
+        <p class="page__subtitle">Filter by track. Built for fast scanning and clear takeaways.</p>
+      </header>
+
+      {{ $tracks := site.Data.tracks.tracks }}
+      {{ $projects := site.Data.projects.projects }}
+
+      <div class="tabs" data-tabs="projects-page">
+        <button class="tab active" data-track="all" type="button">All Projects</button>
+        {{ range $tracks }}
+          <button class="tab" data-track="{{ .id }}" type="button">{{ .title }}</button>
+        {{ end }}
+      </div>
+
+      <div class="page__tools">
+        <div class="inline-search">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          <input id="projectSearch" type="search" placeholder="Search projects" autocomplete="off" />
+        </div>
+      </div>
+
+      <div class="project-list" data-project-list="projects-page">
+        {{ range $projects }}
+          {{ $id := .title | urlize }}
+          <article class="project-item project-item--page" id="{{ $id }}" data-tracks="{{ delimit .tracks " " }}" data-title="{{ .title | lower }}" data-summary="{{ .summary | lower }}">
+            <h2 class="project-item__title">{{ .title }}</h2>
+            <p class="project-item__summary">{{ .summary }}</p>
+
+            <div class="project-item__meta">
+              <div class="project-item__tags">
+                {{ range .tracks }}
+                  {{ $t := index (where $tracks "id" .) 0 }}
+                  <span class="pill">{{ if $t }}{{ $t.title }}{{ else }}{{ . }}{{ end }}</span>
+                {{ end }}
+              </div>
+            </div>
+
+            {{ if .keywords }}
+              <div class="project-item__keywords">
+                <div class="small muted">Keywords</div>
+                <div class="pill-row">
+                  {{ range .keywords }}
+                    <span class="pill pill--muted">{{ . }}</span>
+                  {{ end }}
+                </div>
+              </div>
+            {{ end }}
+
+            {{ if .links }}
+              <div class="project-item__links">
+                {{ range .links }}
+                  <a class="link" href="{{ .href }}" target="_blank" rel="noopener">{{ .text }} →</a>
+                {{ end }}
+              </div>
+            {{ end }}
+          </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

@@ -1,0 +1,13 @@
+tracks:
+- id: applied-ml
+  title: Applied ML & Decision Systems
+- id: climate-energy
+  title: Climate & Energy
+- id: criminal-justice
+  title: Criminal Justice
+- id: data-engineering
+  title: Data Engineering
+- id: finance
+  title: Finance
+- id: nlp-llms
+  title: NLP LLMs

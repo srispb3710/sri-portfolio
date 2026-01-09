@@ -1,0 +1,38 @@
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">About</h2>
+      <p class="section-kicker">A quick snapshot of what I do and what I care about.</p>
+    </div>
+
+    <div class="two-col">
+      <div class="prose">
+        <h3>Hi, I’m Sri!</h3>
+        <p>{{ .Site.Params.hero.content }}</p>
+        {{ with .Site.Params.description }}
+          <p>{{ . }}</p>
+        {{ end }}
+        <p class="muted">This site is built to be fast, readable, and easy to scan—so recruiters can find the signal fast.</p>
+      </div>
+
+      <div class="card card--soft">
+        <div class="card__body">
+          <div class="card__title">Quick Links</div>
+          <div class="stack-sm">
+            {{ with .Site.Params.hero.button }}
+              {{ if .enable }}
+                <a class="btn btn--primary btn--block" href="{{ .url }}" {{ if .newPage }}target="_blank" rel="noopener"{{ end }}>{{ .name }}</a>
+              {{ end }}
+            {{ end }}
+            <a class="btn btn--ghost btn--block" href="/#projects">Browse Projects</a>
+            <a class="btn btn--ghost btn--block" href="/#contact">Contact</a>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="muted small">Currently optimized for a <strong>data science</strong> job hunt (with policy work woven in).</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

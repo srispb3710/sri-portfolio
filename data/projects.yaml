@@ -1,0 +1,45 @@
+projects:
+- title: ML Policy Lab
+  summary: Bias audit + model selection + temporal evaluation.
+  tracks:
+  - applied-ml
+  - nlp-llms
+  - criminal-justice
+  keywords: []
+  links: []
+- title: ANLP RAG System
+  summary: Scraping + retrieval/reranking + EM/F1 evaluation.
+  tracks:
+  - nlp-llms
+  - data-engineering
+  keywords: []
+  links: []
+- title: ANLP VQA
+  summary: Oracle trajectories + fine-tuning + multimodal evaluation.
+  tracks:
+  - nlp-llms
+  keywords: []
+  links: []
+- title: Capstone VSG System
+  summary: NLP override reasons + regression + scaling CJ workflows.
+  tracks:
+  - criminal-justice
+  - nlp-llms
+  - applied-ml
+  keywords: []
+  links: []
+- title: Amazon Reviews Classifier (AzureML)
+  summary: Classic NLP sentiment + AzureML deployment/debugging.
+  tracks:
+  - nlp-llms
+  - data-engineering
+  keywords: []
+  links: []
+- title: Revenue Anomaly Detection
+  summary: Production analytics monitoring + automation.
+  tracks:
+  - finance
+  - applied-ml
+  - data-engineering
+  keywords: []
+  links: []

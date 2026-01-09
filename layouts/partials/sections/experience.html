@@ -1,0 +1,20 @@
+<section class="section" id="experience">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">Experience</h2>
+      <p class="section-kicker">Selected roles and the kind of work I’ve shipped.</p>
+    </div>
+
+    {{ $exp := .Site.GetPage "/experience" }}
+    {{ if $exp }}
+      <div class="card card--soft">
+        <div class="card__body prose">
+          {{ $exp.Content }}
+          <p class="small muted"><a href="/experience/" class="link">View experience page →</a></p>
+        </div>
+      </div>
+    {{ else }}
+      <div class="card card--soft"><div class="card__body">Add experience content in <code>content/experience</code>.</div></div>
+    {{ end }}
+  </div>
+</section>

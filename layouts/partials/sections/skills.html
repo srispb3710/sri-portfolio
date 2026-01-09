@@ -1,0 +1,20 @@
+<section class="section" id="skills">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">Skills</h2>
+      <p class="section-kicker">Tools, techniques, and how I work.</p>
+    </div>
+
+    {{ $skills := .Site.GetPage "/skills" }}
+    {{ if $skills }}
+      <div class="card card--soft">
+        <div class="card__body prose">
+          {{ $skills.Content }}
+          <p class="small muted"><a href="/skills/" class="link">View skills page →</a></p>
+        </div>
+      </div>
+    {{ else }}
+      <div class="card card--soft"><div class="card__body">Add skills content in <code>content/skills</code>.</div></div>
+    {{ end }}
+  </div>
+</section>

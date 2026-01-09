@@ -1,0 +1,28 @@
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-kicker">Let’s talk—research, internships, full-time, or collaborations.</p>
+    </div>
+
+    {{ $contact := .Site.GetPage "/contact" }}
+    <div class="card card--soft">
+      <div class="card__body prose">
+        {{ if $contact }}{{ $contact.Content }}{{ end }}
+
+        <div class="contact-row">
+          {{ with .Site.Params.hero.socialLinks.fontAwesomeIcons }}
+            {{ range . }}
+              {{ if (or (hasPrefix .url "mailto:") (in .icon "linkedin") (in .icon "github")) }}
+                <a class="btn btn--ghost" href="{{ .url }}" target="_blank" rel="noopener">
+                  <i class="{{ .icon }}" aria-hidden="true"></i>
+                  <span>{{ if hasPrefix .url "mailto:" }}Email{{ else if in .icon "linkedin" }}LinkedIn{{ else if in .icon "github" }}GitHub{{ else }}Link{{ end }}</span>
+                </a>
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
