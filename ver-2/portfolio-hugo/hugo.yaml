@@ -1,7 +1,7 @@
 baseURL: "https://yourusername.github.io/"
 languageCode: "en-us"
 title: "Sri Bhamidipati - Portfolio"
-theme: ""
+# theme: ""
 
 params:
   author: "Sri Pranavi Bhamidipati"
