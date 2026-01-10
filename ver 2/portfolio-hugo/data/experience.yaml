@@ -1,0 +1,35 @@
+experiences:
+  - company: "Goldman Sachs"
+    title: "Business Intelligence Analyst II"
+    location: "Dallas, TX"
+    period: "August 2022 – August 2024"
+    description: "Developed ML/analytics tooling spanning data engineering, software, and audit automation."
+    highlights:
+      - "Developed time series dataset + Python clustering/regression models on client Gross Credits, accurately predicting 10 client rank declines in Q4 2023"
+      - "Implemented Isolation Forest ML algorithm for anomaly detection, flagging 50+ critical PnL Net Revenue data points to COO"
+      - "Built and launched \"Management Hub\" — analytics web application used by COO/CFO"
+    additional:
+      - "Developed \"Engagement Tracker\" — web analytics tool monitoring senior leadership engagement with DEI initiatives"
+      - "Contributed to Ariba Invoice Servicing Portal (ISP), recognized by Asia leadership and adopted by 10,000+ global users"
+      - "Created and maintained secure SQL database environment for 20+ teams across Management & Strategy"
+      - "Integrated multiple APIs (Operational Risk Events, Interactions, RTO metrics) into internal data systems"
+      - "Automated data workflows with Autosys and Alteryx, reducing processing times by 25%"
+      - "Organized quarterly data science events for 500+ data professionals; founded Dallas regional Data Science Meetup group"
+
+  - company: "Carnegie Mellon University (SUDS)"
+    title: "Project Manager – Students Using Data for Social Good"
+    location: "Pittsburgh, PA"
+    period: "September 2024 – May 2025"
+    highlights:
+      - "Led 5-person analytics team to visualize trail usage patterns for 25+ miles using heatmaps and flow diagrams"
+      - "Developed predictive forecasting models with 85% accuracy integrating Eco-counter data, weather, holidays, and local events"
+      - "Managed monthly stakeholder meetings and data access agreements (NDAs) for $50K+ infrastructure investments"
+
+  - company: "Carnegie Mellon University (Capstone)"
+    title: "Data Scientist – PA Department of Corrections VSG Analysis"
+    location: "Pittsburgh, PA"
+    period: "August 2024 – May 2025"
+    highlights:
+      - "Built NLP pipeline to extract and structure override reasons from 254,208 VSG records (2016–2024)"
+      - "Developed taxonomy of aggravating vs mitigating themes to support form redesign with structured capture"
+      - "Ran regression and grid-cell analysis on 414,504 arrest records to measure compliance impact on recidivism (OR 1.08, p<0.001)"

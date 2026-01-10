@@ -1,0 +1,238 @@
+featured:
+  - title: "ML Policy Lab"
+    description: "Designed ML system to triage ~2,000 bills per session; ran 792 model variants with explicit fairness constraints. XGBoost captured 82% of passed bills."
+    icon: "balance-scale"
+    color: "blue"
+    github: "https://github.com/yourrepo/ml-policy-lab"
+    badges:
+      - "Bias Audit"
+      - "XGBoost"
+      - "Fairness"
+
+  - title: "ANLP RAG System"
+    description: "Built modular RAG pipeline with hybrid retrieval (BM25 + dense embeddings) and cross-encoder reranking. Qwen2.5-32B + BGE achieving 75.10 F1."
+    icon: "search"
+    color: "green"
+    github: "https://github.com/yourrepo/anlp-rag"
+    badges:
+      - "RAG"
+      - "Retrieval"
+      - "Reranking"
+
+  - title: "ANLP VQA"
+    description: "Generated oracle trajectories for self-reflective fine-tuning on VQA. Improved Soft-VQA: 64.97→66.77 (OK-VQA)."
+    icon: "image"
+    color: "orange"
+    github: "https://github.com/yourrepo/anlp-vqa"
+    badges:
+      - "Multimodal"
+      - "VQA"
+      - "Fine-tuning"
+
+  - title: "Capstone VSG System"
+    description: "Built NLP pipeline + regression analysis on 254K VSG records to measure compliance impact on recidivism."
+    icon: "gavel"
+    color: "purple"
+    github: "https://github.com/yourrepo/capstone-vsg"
+    badges:
+      - "NLP"
+      - "Regression"
+      - "Policy"
+
+  - title: "Third Way Clean Energy"
+    description: "Mapped $13B+ in disclosed equity across Nuclear, LDES, Geothermal, CCS. Built investor taxonomy and policy narratives."
+    icon: "leaf"
+    color: "red"
+    github: "https://github.com/yourrepo/third-way-energy"
+    badges:
+      - "Climate Finance"
+      - "Policy"
+
+  - title: "Goldman Analytics Products"
+    description: "Built Management Hub and Engagement Tracker. Automated PnL anomaly detection with Isolation Forest."
+    icon: "chart-line"
+    color: "cyan"
+    github: "https://github.com/yourrepo/goldman-products"
+    badges:
+      - "Web Apps"
+      - "SQL"
+      - "APIs"
+
+tracks:
+  nlp:
+    name: "Applied NLP"
+    projects:
+      - title: "ANLP VQA – Self-Reflective Multimodal Reasoning"
+        description: "Generated oracle trajectories for self-reflective fine-tuning on knowledge-intensive VQA. Improved Soft-VQA accuracy: 64.97→66.77 (OK-VQA), 77.64→78.34 (A-OKVQA). Ran GPU workloads on AWS."
+        github: "https://github.com/yourrepo/anlp-vqa"
+        badges:
+          - "Multimodal"
+          - "VQA"
+          - "Fine-tuning"
+          - "QLoRA"
+          - "AWS"
+
+      - title: "ANLP RAG System – Retrieval Pipeline"
+        description: "Built modular RAG pipeline: web scraping → hybrid retrieval (BM25 + dense embeddings) → cross-encoder reranking. Best config: Qwen2.5-32B + BGE achieving 75.10 F1, 58.24 EM (p = 0.0156)."
+        github: "https://github.com/yourrepo/anlp-rag"
+        badges:
+          - "RAG"
+          - "Retrieval"
+          - "Reranking"
+          - "Web Scraping"
+
+      - title: "Capstone NLP Override Reasons"
+        description: "Built NLP pipeline to extract and structure override reasons from 254K VSG records. Manual-coded dataset of ~200 forms. Created taxonomy (aggravating vs mitigating) for form redesign."
+        github: "https://github.com/yourrepo/capstone-nlp"
+        badges:
+          - "NLP"
+          - "Text Classification"
+          - "Qualitative Coding"
+          - "Policy"
+
+      - title: "Amazon Reviews Sentiment Pipeline (AzureML)"
+        description: "Engineered sentiment classification pipeline on 100K+ Amazon reviews. Applied TF-IDF (10K features) + logistic regression, achieving 76.4% accuracy. Deployed via AzureML."
+        github: "https://github.com/yourrepo/amazon-sentiment"
+        badges:
+          - "NLP"
+          - "TF-IDF"
+          - "Sentiment Analysis"
+          - "AzureML"
+
+  policy:
+    name: "Responsible AI & Policy"
+    projects:
+      - title: "ML Policy Lab – Bias Audit & Model Selection"
+        description: "Designed ML system to triage ~2,000 bills/session into top 15% likely to pass. Evaluated 88 model types (792 variants) with temporal evaluation + fairness constraints. XGBoost captured 82% of passed bills."
+        github: "https://github.com/yourrepo/ml-policy-lab"
+        badges:
+          - "Bias Audit"
+          - "Temporal Evaluation"
+          - "XGBoost"
+          - "Model Selection"
+
+      - title: "Capstone Compliance Measurement Framework"
+        description: "Ran regression + grid-cell analysis on 414K arrest records to measure VSG compliance impact on recidivism. Reported: non-compliance → OR 1.08 (p < 0.001), +1.5pp predicted probability increase."
+        github: "https://github.com/yourrepo/capstone-compliance"
+        badges:
+          - "Regression"
+          - "Stratified Analysis"
+          - "Policy Measurement"
+
+      - title: "Digital Twins Policy Memo (Transportation)"
+        description: "Co-authored policy report evaluating digital twin tech in urban infrastructure (Singapore, Boston, Barcelona). Assessed scalability, equity tradeoffs, predictive maintenance, disaster resilience."
+        url: "https://example.com/digital-twins-report"
+        badges:
+          - "Policy Research"
+          - "Digital Twins"
+          - "Urban Infrastructure"
+
+      - title: "AI Governance & Fairness Research"
+        description: "Additional responsible AI governance work, fairness audits, and policy research projects focused on equitable AI deployment."
+        github: "https://github.com/yourrepo/ai-governance"
+        badges:
+          - "AI Governance"
+          - "Fairness"
+          - "Policy"
+
+  climate:
+    name: "Climate & Finance"
+    projects:
+      - title: "Third Way Clean Energy Finance Mapping"
+        description: "Mapped $13B+ disclosed equity across Nuclear (~$7.5B), LDES (~$3B), Geothermal (~$2B), CCS (~$0.4B). Built investor taxonomy (VC/PE/corporate) and produced infographic-style policy narratives."
+        github: "https://github.com/yourrepo/third-way-energy"
+        badges:
+          - "Climate Finance"
+          - "Investment Analysis"
+          - "Policy"
+
+      - title: "Smart Grid Policy Memo"
+        description: "Authored policy brief on U.S. Grid Modernization: regulatory responses, investment trends, public-private partnerships. Analyzed fiscal policy options for equitable AI-integrated smart infrastructure."
+        url: "https://example.com/smart-grid-memo"
+        badges:
+          - "Energy Policy"
+          - "Grid Modernization"
+          - "Public-Private Partnerships"
+
+      - title: "EnerVision – Energy Forecasting Model"
+        description: "Developed time series model forecasting U.S. energy consumption/production (1973-2021) within 0.5 quadrillion Btu accuracy. Created investor pitch deck: $1M proposal, 10x ROI, $15M revenue by Year 5."
+        github: "https://github.com/yourrepo/enervision"
+        badges:
+          - "Time Series"
+          - "Forecasting"
+          - "ARIMA"
+
+  healthcare:
+    name: "Healthcare AI"
+    projects:
+      - title: "RA-UPMC Clinical Workflow Mapping (Digital Pathology)"
+        description: "Produced end-to-end breast pathology workflow map. Identified bottlenecks: reporting consumes ~34% of pathologists' time. Framed AI opportunities: structured synoptic reporting, integration middleware."
+        url: "https://example.com/upmc-workflow"
+        badges:
+          - "Workflow Mapping"
+          - "Healthcare"
+          - "Digital Pathology"
+
+      - title: "Heart Disease Mortality Data Analysis"
+        description: "Analyzed 472K+ CDC records (2013-2020) across 2,000+ counties. Applied ANOVA to identify demographic disparities (geography, gender, race). Built choropleth maps and time series visualizations."
+        github: "https://github.com/yourrepo/heart-disease-analysis"
+        badges:
+          - "Health Data"
+          - "Statistical Analysis"
+          - "ANOVA"
+          - "Visualization"
+
+  optimization:
+    name: "Optimization & Forecasting"
+    projects:
+      - title: "From Data to Action – Pittsburgh Flood Risk (MIP vs Greedy)"
+        description: "Built decision-support framework for flood mitigation ($14.5M budget allocation). Designed composite risk score (FEMA + SVI equity). Compared MIP optimization vs greedy heuristic selection."
+        github: "https://github.com/yourrepo/flood-risk-mip"
+        badges:
+          - "Optimization"
+          - "MIP"
+          - "Decision Support"
+
+      - title: "SUDS Trail Usage Forecasting"
+        description: "Developed predictive models with 85% accuracy for 25+ miles of trails. Integrated Eco-counter data + weather + holidays. Produced heatmaps and flow diagrams to guide $50K+ infrastructure investments."
+        github: "https://github.com/yourrepo/suds-trails"
+        badges:
+          - "Forecasting"
+          - "Predictive Modeling"
+          - "Geospatial"
+
+      - title: "EnerVision Energy Forecasting"
+        description: "Built ARIMA time series model on 50+ years of U.S. energy data (1973-2021). Back-tested and cross-validated for long-term reliability. Supported policy planning, ESG risk mitigation, investment decisions."
+        github: "https://github.com/yourrepo/enervision-forecast"
+        badges:
+          - "Time Series"
+          - "ARIMA"
+          - "Forecasting"
+
+  dataeng:
+    name: "Data Engineering & Products"
+    projects:
+      - title: "Goldman Sachs – Management Hub & Engagement Tracker"
+        description: "Built Management Hub (COO/CFO analytics platform centralizing global markets/banking/ops data). Developed Engagement Tracker (DEI monitoring web app). Contributed to Ariba ISP (10K+ users, Asia award nomination)."
+        github: "https://github.com/yourrepo/goldman-products"
+        badges:
+          - "Web Applications"
+          - "Dashboards"
+          - "SQL"
+
+      - title: "Goldman Sachs – Data Pipelines & Automation"
+        description: "Created SQL database environment for 20+ teams. Integrated APIs (Operational Risk Events, Interactions, RTO metrics) via Alloy/Pure. Automated workflows with Autosys/Alteryx, reducing processing times by 25%."
+        github: "https://github.com/yourrepo/goldman-pipelines"
+        badges:
+          - "Data Engineering"
+          - "SQL"
+          - "APIs"
+          - "Automation"
+
+      - title: "Dashboarding & Integration Work"
+        description: "Delivered Tableau dashboards for Marquee Sales tracking market performance and usage trends. Built anomaly detection (Isolation Forest) flagging 50+ critical PnL data points. Reduced audit review times by 25%."
+        github: "https://github.com/yourrepo/goldman-dashboards"
+        badges:
+          - "Tableau"
+          - "Dashboards"
+          - "Anomaly Detection"

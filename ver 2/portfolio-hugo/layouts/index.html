@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Site.Title }}</title>
+    <meta name="description" content="{{ .Site.Params.description }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
+</head>
+<body>
+    {{ partial "header.html" . }}
+    {{ partial "hero.html" . }}
+    {{ partial "about.html" . }}
+    {{ partial "experience.html" . }}
+    {{ partial "projects.html" . }}
+    {{ partial "skills.html" . }}
+    {{ partial "contact.html" . }}
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+</body>
+</html>

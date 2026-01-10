@@ -1,0 +1,29 @@
+<section id="hero">
+    <div class="container">
+        <div class="hero-wrapper">
+            <div class="hero-content">
+                <h1>{{ .Site.Params.hero.name | replaceRE " ([^ ]+)$" "<br>$1" | safeHTML }}</h1>
+                <h2>{{ .Site.Params.hero.tagline }}</h2>
+                <p>{{ .Site.Params.hero.bio }}</p>
+                
+                <div class="social-links">
+                    <a href="{{ .Site.Params.social.linkedin }}" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="{{ .Site.Params.social.github }}" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:{{ .Site.Params.social.email }}" title="Email"><i class="fa fa-envelope"></i></a>
+                    <a href="{{ .Site.Params.social.resume }}" target="_blank" title="Resume PDF"><i class="fa fa-file-pdf"></i></a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <img src="{{ .Site.Params.hero.profileImage }}" alt="{{ .Site.Params.author }}">
+            </div>
+        </div>
+    </div>
+    
+    <div class="scroll-indicator">
+        <a href="#about">
+            <span style="font-size: 0.875rem; font-weight: 600;">View Below</span>
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </div>
+</section>

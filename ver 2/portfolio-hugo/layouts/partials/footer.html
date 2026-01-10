@@ -1,0 +1,10 @@
+<footer>
+    <div class="container">
+        <p>&copy; {{ now.Year }} {{ .Site.Params.author }}. All rights reserved.</p>
+        <div class="social-links" style="margin-top: 1rem; justify-content: center;">
+            <a href="{{ .Site.Params.social.github }}" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="{{ .Site.Params.social.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:{{ .Site.Params.social.email }}"><i class="fa fa-envelope"></i></a>
+        </div>
+    </div>
+</footer>

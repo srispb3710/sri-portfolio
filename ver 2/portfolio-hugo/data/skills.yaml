@@ -1,0 +1,87 @@
+skills:
+  - title: "Languages"
+    items:
+      - "Python"
+      - "SQL"
+      - "R"
+      - "C#, .NET MVC"
+      - "Java, HTML/CSS, JavaScript"
+      - "SAS"
+
+  - title: "Frameworks & Libraries"
+    items:
+      - "PyTorch, TensorFlow"
+      - "scikit-learn, pandas, NumPy"
+      - "NLTK, Hugging Face"
+      - "LangChain"
+      - "Flask, React, Node.js"
+
+  - title: "Tools & Platforms"
+    items:
+      - "Git, Jupyter"
+      - "Tableau, Power BI, Excel"
+      - "Azure ML, DataBricks"
+      - "AWS, Docker"
+      - "Alteryx, Autosys"
+
+  - title: "ML & NLP Specializations"
+    items:
+      - "RAG Systems"
+      - "Fine-tuning (QLoRA)"
+      - "Multimodal AI"
+      - "Time Series Forecasting"
+      - "Clustering, Anomaly Detection"
+      - "Sentiment Analysis"
+
+  - title: "Leadership & Management"
+    items:
+      - "Project Management"
+      - "Team Leadership"
+      - "Stakeholder Communication"
+      - "Cross-Functional Collaboration"
+      - "Mentorship"
+
+  - title: "Communication & Strategy"
+    items:
+      - "Technical Writing"
+      - "Policy Analysis"
+      - "Data Storytelling"
+      - "Executive Presentations"
+      - "Investor Pitching"
+
+coursework:
+  - title: "Applied ML, Statistics, & Decision Modeling"
+    items:
+      - "Optimization"
+      - "Decision & Risk Modeling"
+      - "Applied Econometrics"
+      - "Time Series Forecasting"
+      - "Exploratory Data Analysis"
+
+  - title: "NLP, LLMs, & Generative AI"
+    items:
+      - "Advanced Natural Language Processing"
+      - "Computational Data Science"
+      - "Unstructured Data Analytics for Policy"
+      - "Generative AI Lab"
+
+  - title: "Systems, Data, & Production"
+    items:
+      - "Database Management"
+      - "ML in Production"
+      - "Systems Synthesis"
+
+  - title: "Policy, Governance, & Communication"
+    items:
+      - "AI Governance"
+      - "Writing for Public Policy"
+      - "Critical Analysis for Policy Research"
+      - "Strategic Presentation Skills"
+      - "Organizational Design & Implementation"
+
+  - title: "Urban / Global Context"
+    items:
+      - "Smart Cities"
+      - "International Politics"
+      - "From Data to Action"
+      - "Accounting & Financial Analytics"

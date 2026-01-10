@@ -1,0 +1,29 @@
+<section id="experience">
+    <div class="container">
+        <h2>Experience</h2>
+        
+        {{ range .Site.Data.experience.experiences }}
+        <div class="experience-item">
+            <h3>{{ .company }}</h3>
+            <h4>{{ .title }}</h4>
+            <div class="experience-meta">{{ .period }} • {{ .location }}</div>
+            {{ with .description }}<p>{{ . }}</p>{{ end }}
+            <ul>
+                {{ range .highlights }}
+                <li>{{ . }}</li>
+                {{ end }}
+            </ul>
+            {{ if .additional }}
+            <button class="view-more-btn" onclick="toggleContent('{{ .company | urlize }}')">View More</button>
+            <div class="additional-content" id="{{ .company | urlize }}">
+                <ul>
+                    {{ range .additional }}
+                    <li>{{ . }}</li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</section>

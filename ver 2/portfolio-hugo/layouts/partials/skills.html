@@ -1,0 +1,33 @@
+<section id="skills">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            {{ range .Site.Data.skills.skills }}
+            <div class="skill-card">
+                <h3>{{ .title }}</h3>
+                <ul>
+                    {{ range .items }}
+                    <li>{{ . }}</li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{ end }}
+        </div>
+
+        <div class="coursework-section">
+            <h3>Coursework</h3>
+            <div class="coursework-grid">
+                {{ range .Site.Data.skills.coursework }}
+                <div class="coursework-card">
+                    <h4>{{ .title }}</h4>
+                    <ul>
+                        {{ range .items }}
+                        <li>{{ . }}</li>
+                        {{ end }}
+                    </ul>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>

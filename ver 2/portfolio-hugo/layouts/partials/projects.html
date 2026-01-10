@@ -1,0 +1,59 @@
+<section id="projects">
+    <div class="container">
+        <h2>Featured Projects</h2>
+        
+        <div class="projects-grid">
+            {{ range .Site.Data.projects.featured }}
+            <div class="project-card" onclick="window.open('{{ .github }}', '_blank')">
+                <div class="project-image">
+                    <i class="fas fa-{{ .icon }}"></i>
+                    <a href="{{ .github }}" target="_blank" class="project-github" onclick="event.stopPropagation()">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="project-content">
+                    <h3>{{ .title }}</h3>
+                    <p>{{ .description }}</p>
+                    <div class="project-badges">
+                        {{ range .badges }}
+                        <span class="badge">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+
+        <h2 style="margin-top: 3rem;">All Projects</h2>
+        <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: 2rem;">Explore all 19 projects organized by domain and application area</p>
+        
+        <div class="project-tabs">
+            {{ $first := true }}
+            {{ range $key, $track := .Site.Data.projects.tracks }}
+            <button class="tab-button{{ if $first }} active{{ end }}" onclick="showTrack('{{ $key }}', this)">{{ $track.name }}</button>
+            {{ $first = false }}
+            {{ end }}
+        </div>
+
+        {{ $first := true }}
+        {{ range $key, $track := .Site.Data.projects.tracks }}
+        <div class="track-projects{{ if $first }} active{{ end }}" id="track-{{ $key }}">
+            {{ range $track.projects }}
+            <div class="project-list-item" onclick="{{ if .github }}window.open('{{ .github }}', '_blank'){{ else if .url }}window.open('{{ .url }}', '_blank'){{ end }}">
+                <a href="{{ if .github }}{{ .github }}{{ else }}{{ .url }}{{ end }}" target="_blank" class="project-github" onclick="event.stopPropagation()">
+                    {{ if .github }}<i class="fab fa-github"></i>{{ else }}<i class="fas fa-external-link-alt"></i>{{ end }}
+                </a>
+                <h4>{{ .title }}</h4>
+                <p>{{ .description }}</p>
+                <div class="project-badges">
+                    {{ range .badges }}
+                    <span class="badge">{{ . }}</span>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        {{ $first = false }}
+        {{ end }}
+    </div>
+</section>
