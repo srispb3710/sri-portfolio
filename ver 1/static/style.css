@@ -1,0 +1,98 @@
+/* =========================================================
+   FINAL STYLE.CSS — Hugo-Profile Safe Enhancements Only
+   ========================================================= */
+
+/* ===== NAVBAR: proper layout ===== */
+
+nav.navbar .navbar-brand {
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+nav.navbar form input {
+  max-width: 220px;
+}
+
+/* Mobile: stack naturally */
+@media (max-width: 991px) {
+  nav.navbar .container-fluid {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  nav.navbar .navbar-brand {
+    margin: 0;
+  }
+}
+
+/* =========================
+   HERO (polish only)
+   ========================= */
+
+/* Make sure name never wraps */
+.hero-title,
+.hero h1 {
+  font-size: clamp(2.4rem, 5vw, 3rem);
+  white-space: nowrap;
+}
+
+/* Keep hero text readable */
+.hero-content p {
+  max-width: 900px;
+}
+
+/* Social icons modest & aligned */
+.hero-social-links a {
+  opacity: 0.85;
+}
+.hero-social-links a:hover {
+  opacity: 1;
+}
+
+/* =========================
+   EDUCATION (subtle lift)
+   ========================= */
+
+#education .card {
+  border-radius: 18px;
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+#education .card:hover {
+  transform: translateY(-2px);
+  transition: transform 0.15s ease;
+}
+
+/* =========================
+   FEATURED PROJECTS (KEEP LOOK)
+   ========================= */
+
+#projects .project-card {
+  width: 100%;
+  max-width: 100%;
+}
+
+.project-card .project-title {
+  font-weight: 700;
+}
+
+.project-card .project-desc {
+  line-height: 1.5;
+  opacity: 0.92;
+}
+
+/* =========================
+   DARK MODE READABILITY
+   ========================= */
+
+[data-theme="dark"] .card,
+[data-theme="dark"] .project-card {
+  background-color: rgba(255,255,255,0.04);
+  border-color: rgba(255,255,255,0.08);
+}
+
+[data-theme="dark"] p,
+[data-theme="dark"] li {
+  opacity: 0.95;
+}
