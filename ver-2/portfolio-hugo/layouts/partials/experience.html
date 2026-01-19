@@ -2,28 +2,154 @@
     <div class="container">
         <h2>Experience</h2>
         
-        {{ range .Site.Data.experience.experiences }}
-        <div class="experience-item">
-            <h3>{{ .company }}</h3>
-            <h4>{{ .title }}</h4>
-            <div class="experience-meta">{{ .period }} • {{ .location }}</div>
-            {{ with .description }}<p>{{ . }}</p>{{ end }}
-            <ul>
-                {{ range .highlights }}
-                <li>{{ . }}</li>
+        <div class="timeline">
+            {{ range .Site.Data.experience.experiences }}
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title-block">
+                        {{ if .is_internship_group }}
+                            <h3>{{ .company }}</h3>
+                            <p class="period">{{ .period }}</p>
+                        {{ else }}
+                            <h3>{{ .title }}</h3>
+                            <div class="company-location">
+                                <span class="company">{{ .company }}</span>
+                                <span class="location">{{ .location }}</span>
+                            </div>
+                            <p class="period">{{ .period }}</p>
+                        {{ end }}
+                    </div>
+                </div>
+                
+                {{ if .description }}
+                <p class="experience-description">{{ .description }}</p>
                 {{ end }}
-            </ul>
-            {{ if .additional }}
-            <button class="view-more-btn" onclick="toggleContent('{{ .company | urlize }}')">View More</button>
-            <div class="additional-content" id="{{ .company | urlize }}">
-                <ul>
-                    {{ range .additional }}
-                    <li>{{ . }}</li>
+                
+                {{ if not .is_internship_group }}
+                    <!-- Regular experience highlights -->
+                    <ul class="highlights">
+                        {{ range .highlights }}
+                        <li>{{ . }}</li>
+                        {{ end }}
+                    </ul>
+                    
+                    {{ if .additional }}
+                    <button class="view-more-btn" onclick="toggleAdditional(this)">
+                        <span class="view-more-text">View More</span>
+                        <span class="view-less-text" style="display: none;">View Less</span>
+                    </button>
+                    <ul class="additional-highlights" style="display: none;">
+                        {{ range .additional }}
+                        <li>{{ . }}</li>
+                        {{ end }}
+                    </ul>
                     {{ end }}
-                </ul>
+                {{ else }}
+                    <!-- Internships group with collapsible section -->
+                    <button class="view-more-btn internships-btn" onclick="toggleInternships(this)">
+                        <span class="view-more-text">View Internships</span>
+                        <span class="view-less-text" style="display: none;">Hide Internships</span>
+                    </button>
+                    
+                    <div class="internships-container" style="display: none;">
+                        {{ range .internships }}
+                        <div class="internship-item">
+                            <div class="internship-header">
+                                <h4>{{ .title }}</h4>
+                                <div class="company-location">
+                                    <span class="company">{{ .company }}</span>
+                                    <span class="location">{{ .location }}</span>
+                                </div>
+                                <p class="period">{{ .period }}</p>
+                            </div>
+                            <ul class="highlights">
+                                {{ range .highlights }}
+                                <li>{{ . }}</li>
+                                {{ end }}
+                            </ul>
+                        </div>
+                        {{ end }}
+                    </div>
+                {{ end }}
             </div>
             {{ end }}
         </div>
-        {{ end }}
     </div>
 </section>
+
+<style>
+/* Internships group styling */
+.internships-container {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.internship-item {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.internship-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.internship-header {
+    margin-bottom: 0.75rem;
+}
+
+.internship-header h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 0 0 0.25rem 0;
+}
+
+.internships-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.internships-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+</style>
+
+<script>
+// Toggle additional highlights (existing function)
+function toggleAdditional(button) {
+    const additionalHighlights = button.nextElementSibling;
+    const viewMoreText = button.querySelector('.view-more-text');
+    const viewLessText = button.querySelector('.view-less-text');
+    
+    if (additionalHighlights.style.display === 'none') {
+        additionalHighlights.style.display = 'block';
+        viewMoreText.style.display = 'none';
+        viewLessText.style.display = 'inline';
+    } else {
+        additionalHighlights.style.display = 'none';
+        viewMoreText.style.display = 'inline';
+        viewLessText.style.display = 'none';
+    }
+}
+
+// Toggle internships section (new function)
+function toggleInternships(button) {
+    const internshipsContainer = button.nextElementSibling;
+    const viewMoreText = button.querySelector('.view-more-text');
+    const viewLessText = button.querySelector('.view-less-text');
+    
+    if (internshipsContainer.style.display === 'none') {
+        internshipsContainer.style.display = 'block';
+        viewMoreText.style.display = 'none';
+        viewLessText.style.display = 'inline';
+    } else {
+        internshipsContainer.style.display = 'none';
+        viewMoreText.style.display = 'inline';
+        viewLessText.style.display = 'none';
+    }
+}
+</script>

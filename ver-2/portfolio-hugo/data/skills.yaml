@@ -22,15 +22,17 @@ skills:
       - "Tableau, Power BI, Excel"
       - "Azure ML, DataBricks"
       - "AWS, Docker"
-      - "Alteryx, Autosys"
+      - "Alteryx"
+      - "API Integration"
 
   - title: "ML & NLP Specializations"
     items:
       - "RAG Systems"
       - "Fine-tuning (QLoRA)"
-      - "Multimodal AI"
+      - "Multimodal NLP"
       - "Time Series Forecasting"
       - "Clustering, Anomaly Detection"
+      - "Supervised & Unsupervised ML Algorithms"
       - "Sentiment Analysis"
 
   - title: "Leadership & Management"
@@ -69,7 +71,7 @@ coursework:
     items:
       - "Database Management"
       - "ML in Production"
-      - "Systems Synthesis"
+      - "Systems Synthesis Capstone"
 
   - title: "Policy, Governance, & Communication"
     items:
@@ -79,9 +81,10 @@ coursework:
       - "Strategic Presentation Skills"
       - "Organizational Design & Implementation"
 
-  - title: "Urban / Global Context"
+  - title: "Urban & Global Context"
     items:
       - "Smart Cities"
-      - "International Politics"
+      - "International Policy & Politics"
       - "From Data to Action"
       - "Accounting & Financial Analytics"
+      - "International Crisis Negotiation"

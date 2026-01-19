@@ -3,21 +3,44 @@ experiences:
     title: "Business Intelligence Analyst II"
     location: "Dallas, TX"
     period: "August 2022 – August 2024"
-    description: "Developed ML/analytics tooling spanning data engineering, software, and audit automation."
+    description: "Developed analytics systems spanning data engineering, software development, and audit automation for Management & Strategy team within Global Banking & Markets division."
     highlights:
-      - "Developed time series dataset + Python clustering/regression models on client Gross Credits, accurately predicting 10 client rank declines in Q4 2023"
-      - "Implemented Isolation Forest ML algorithm for anomaly detection, flagging 50+ critical PnL Net Revenue data points to COO"
-      - "Built and launched \"Management Hub\" — analytics web application used by COO/CFO"
+      - "Built time series dataset and clustering models (Python, scikit-learn) analyzing client Gross Credits data, accurately predicting 10 client rank declines in Q4 2023 for proactive risk management"
+      - "Implemented Isolation Forest algorithm for anomaly detection, flagging 50+ critical PnL Net Revenue data points to COO, reducing audit review times by 25%"
+      - "Delivered Tableau dashboards tracking Marquee Sales market performance and usage trends to identify gaps and increase client retention"
     additional:
-      - "Developed \"Engagement Tracker\" — web analytics tool monitoring senior leadership engagement with DEI initiatives"
-      - "Contributed to Ariba Invoice Servicing Portal (ISP), recognized by Asia leadership and adopted by 10,000+ global users"
-      - "Created and maintained secure SQL database environment for 20+ teams across Management & Strategy"
-      - "Integrated multiple APIs (Operational Risk Events, Interactions, RTO metrics) into internal data systems"
-      - "Automated data workflows with Autosys and Alteryx, reducing processing times by 25%"
-      - "Organized quarterly data science events for 500+ data professionals; founded Dallas regional Data Science Meetup group"
+      - "Built and launched Management Hub, a web application consolidating Global Markets, Banking, and Operations data with embedded analytics, used by COO and CFO for cross-divisional decision-making"
+      - "Developed Engagement Tracker, a web analytics dashboard monitoring senior leadership engagement with DEI initiatives, supporting GBM Chief of Staff strategic planning"
+      - "Contributed to Ariba Invoice Servicing Portal (ISP), recognized by Asia leadership and adopted by 10,000 plus global users, improving client service efficiency"
+      - "Created and maintained SQL database environment with role-based access controls for 20 plus teams across Management and Strategy divisions"
+      - "Integrated multiple APIs (Operational Risk Events, Interactions, RTO metrics) into internal data systems using Alloy and Pure, improving data interoperability across platforms"
+      - "Automated data workflows with Autosys and Alteryx, reducing processing times and ensuring consistency across Capital, Liquidity, and PnL datasets"
+      - "Served on Global Banking Markets Women's Network Steering Committee, publishing four quarterly newsletters highlighting network initiatives and increasing internal engagement"
+      - "Interviewed Partner Managing Directors and senior leaders across the firm providing career insights and mentorship content for network members"
+      - "Organized quarterly data science events facilitating knowledge sharing among 500 plus data professionals, featuring presentations on recent papers and ML techniques"
+      - "Founded Dallas regional Data Science Meetup group to foster collaboration and standardize analytics tools across local teams"
 
-  - company: "Carnegie Mellon University (SUDS)"
-    title: "Project Manager – Students Using Data for Social Good"
+  - company: "Third Way – Climate & Clean Energy Finance"
+    title: "Research Analyst"
+    location: "Washington, DC"
+    period: "June – August 2025"
+    highlights:
+      - "Mapped $13+ billion disclosed equity investments across Nuclear, Long Duration Energy Storage, Geothermal, and Carbon Capture"
+      - "Created investor classification system (VC, PE, corporate, institutional) making capital flows interpretable across clean energy technologies"
+      - "Diagnosed structural finance bottlenecks, including missing middle and low debt usage, translating findings into policy-relevant levers for de-risking and blended finance structures"
+      - "Created infographic-style policy narratives grounded in quantified data for stakeholder communications and policy briefs"
+
+  - company: "Carnegie Mellon University – PA Department of Corrections (Capstone)"
+    title: "NLP Specialist"
+    location: "Pittsburgh, PA"
+    period: "August 2025 – December 2025"
+    highlights:
+      - "Built NLP pipeline to extract and structure override reasons from VSG records (2016–2024)"
+      - "Developed taxonomy of aggravating vs mitigating themes to support form redesign with structured capture"
+      - "Ran regression and grid-cell analysis on arrest records to measure compliance impact on recidivism"
+
+  - company: "Carnegie Mellon University – Students Using Data for Social Good (SUDS)"
+    title: "Project Manager"
     location: "Pittsburgh, PA"
     period: "September 2024 – May 2025"
     highlights:
@@ -25,11 +48,61 @@ experiences:
       - "Developed predictive forecasting models with 85% accuracy integrating Eco-counter data, weather, holidays, and local events"
       - "Managed monthly stakeholder meetings and data access agreements (NDAs) for $50K+ infrastructure investments"
 
-  - company: "Carnegie Mellon University (Capstone)"
-    title: "Data Scientist – PA Department of Corrections VSG Analysis"
+  - company: "Carnegie Mellon University – Operations and Supply Chain Analytics"
+    title: "Teaching Assistant"
     location: "Pittsburgh, PA"
-    period: "August 2024 – May 2025"
+    period: "March 2025 – May 2025"
     highlights:
-      - "Built NLP pipeline to extract and structure override reasons from 254,208 VSG records (2016–2024)"
-      - "Developed taxonomy of aggravating vs mitigating themes to support form redesign with structured capture"
-      - "Ran regression and grid-cell analysis on 414,504 arrest records to measure compliance impact on recidivism (OR 1.08, p<0.001)"
+      - "Supported instruction for 100 plus student MBA-level course on linear programming, simulation, and decision modeling using Excel Solver and Python"
+      - "Graded weekly assignments and case studies, led office hours providing academic support, and assisted with final project presentations"
+
+  # INTERNSHIPS - Grouped Section
+  - company: "Internships"
+    title: ""
+    location: ""
+    period: "2019 – 2022"
+    description: "Early-career technical roles spanning data science, data engineering, and software development across manufacturing, energy, and logistics sectors."
+    is_internship_group: true
+    internships:
+      - company: "Caterpillar Digital"
+        title: "Data Science Researcher"
+        location: "West Lafayette, IN"
+        period: "January 2022 – May 2022"
+        highlights:
+          - "Applied CRISP-DM process and clustering algorithms (K-Means, PCA, DBScan, Agglomerative Hierarchical) to analyze machine repair invoice patterns, uncovering seasonal and location-based trends that optimized inventory planning"
+          - "Evaluated and optimized seven predictive models for revenue forecasting in equipment servicing, improving forecast accuracy by 20 percent through feature engineering and similarity-based clustering"
+      
+      - company: "Chevron"
+        title: "Financial Data Engineering Intern"
+        location: "Houston, TX"
+        period: "June 2021 – August 2021"
+        highlights:
+          - "Delivered financial data products in collaboration with Product Owners within Financial Digital Enablement team supporting enterprise financial reporting and analytics"
+          - "Audited, cleaned, and transformed data across Raw to Refined to Produced pipelines using Azure DataBricks, Data Factory, and Data Lake, ensuring data accuracy and successful pipeline runs"
+          - "Built and validated ETL workflows processing financial datasets, implementing data quality checks and monitoring procedures to maintain data integrity across production systems"
+      
+      - company: "UPS"
+        title: "Data Science Co-op"
+        location: "Louisville, KY"
+        period: "August 2020 – February 2021"
+        highlights:
+          - "Collected historical transportation load data and created automated model replacing current Dynamic Load Plan, predicting incoming package volume and optimizing unload sequences"
+          - "Accounted for extemporaneous variables including projected building performance to improve operational efficiency and resource allocation across hub operations"
+          - "Utilized Python packages, AnyLogic simulation, and Tableau to provide actionable business insights for logistics optimization and capacity planning"
+      
+      - company: "UPS"
+        title: "Software Engineering Intern"
+        location: "Louisville, KY"
+        period: "June 2020 – August 2020"
+        highlights:
+          - "Leveraged Angular and ASP.NET to launch mobile application digitizing and streamlining 30-day Cornerstone training process for hub employees"
+          - "Implemented task progress tracking and data summarization features storing training metrics, reducing manual paperwork and improving onboarding efficiency across multiple hub locations"
+      
+      - company: "Data Mine Corporate Partnership – John Deere"
+        title: "Data Science Researcher"
+        location: "West Lafayette, IN"
+        period: "August 2019 – May 2020"
+        highlights:
+          - "Examined USDA and NOAA datasets to determine effects of weather patterns on corn crop yield in Ohio Valley region, applying K-Means clustering and multiple linear regression to identify predictive relationships"
+          - "Operated as Project Manager within team, coordinating analysis workflows and communicating findings to John Deere executives through presentations and technical reports"
+          - "Built predictive models correlating temperature, precipitation, and soil conditions with crop yield variations, providing actionable insights for agricultural planning and risk assessment"
